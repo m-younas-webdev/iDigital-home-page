@@ -1,0 +1,92 @@
+.digital-header-section {
+    padding: 13px 0 22px;
+
+    .container {
+        .digital-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .digital-header-logo {
+                font-size: 44px;
+                line-height: 54px;
+
+                a {
+                    color: var(--black);
+                    font-family: var(--ff-satoshi);
+                    text-decoration: none;
+                }
+            }
+
+            .header-navigations {
+                .header-navigation-list {
+                    display: flex;
+
+                    .header-nav-item {
+                        a {
+                            font-family: var(--ff-satoshi);
+                            color: var(--black);
+                            font-size: 18px;
+                            line-height: 26px;
+                            padding: 12px;
+                            border-radius: 14px;
+                            transition: all .3s ease;
+
+                            /* &:hover {
+                                color: var(--white);
+                                background-color: var(--blue);
+                            } */
+                            &:hover {
+                                /* color: var(--white); */
+                                color: var(--blue);
+                                /* background-color: var(--blue); */
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-cta-button-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+                justify-content: center;
+
+                .input-label {
+                    input {
+                        display: none;
+                    }
+
+                    svg {
+                        display: flex;
+                    }
+                }
+
+                .cta-btn {
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--blue);
+                    padding: 4px;
+                    border-radius: 50px;
+                    gap: 6px;
+                    border: none;
+
+                    span {
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: var(--white);
+                        padding-left: 16px;
+                    }
+
+                    .arrow-svg {
+                        padding: 8px;
+                        border-radius: 50%;
+                        background-color: white;
+
+                        svg {}
+                    }
+                }
+            }
+        }
+    }
+}
