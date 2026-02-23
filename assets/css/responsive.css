@@ -16,7 +16,7 @@
           height: 100%;
           width: 70%;
           gap: 30px;
-          background-color: rgba(0, 0, 0, 0.37);
+          background-color: rgba(167, 155, 155, 0.589);
           backdrop-filter: blur(10px);
           gap: 50px;
           transition: all .6s ease;
@@ -56,7 +56,7 @@
           &.header-navigation-wrapper.show {
             right: 0;
             opacity: 1;
-            z-index: 1;
+            z-index: 3;
           }
         }
 
@@ -87,6 +87,7 @@
       transition:
         opacity 0.6s ease,
         visibility 0.6s ease;
+      z-index: 2;
     }
 
     .overlay.active {
@@ -101,6 +102,11 @@
     .container {
       .digital-hero-container {
         padding-left: 0;
+        padding: 60px 0 70px 0;
+
+        &::before {
+          background: linear-gradient(92.89deg, rgba(15, 99, 220, 0.9) 13.51%, rgba(15, 99, 220, 0) 100.52%);
+        }
 
         .digital-hero-container-content {
           display: flex;
@@ -131,6 +137,7 @@
             text-align: center;
             font-size: 23px;
             line-height: 33px;
+            max-width: 70%;
           }
 
           .cta-buttons {
@@ -166,6 +173,9 @@
           }
 
           .social-ranking-badge-wrapper {
+            text-align: center;
+            padding-top: 33px;
+
             .social-ranking-badge {
               svg {
                 g {
@@ -267,74 +277,102 @@
   .digital-hero-section {
     .container {
       .digital-hero-container {
+        border-radius: 20px;
+        padding: 47px 0 48px 0;
+
         .digital-hero-container-content {
           .service-status-label {
+            padding: 2px;
+
             .statu-label-icon {
-              svg {}
+              padding: 4px;
+
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+
+            span {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+
+          .digital-hero-container-head {
+            font-size: clamp(30px, 3vw + 1rem, 38px);
+            line-height: clamp(38px, 3vw + 1rem, 48px);
+            max-width: 75%;
+            padding: 26px 0 12px;
+          }
+
+          .hero-container-desc {
+            max-width: 72%;
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .cta-buttons {
+            padding: 31px 0 40px;
+            flex-direction: column;
+
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
 
               span {}
-            }
 
-            .digital-hero-container-head {}
-
-            .hero-container-desc {}
-
-            .cta-buttons {
-              .cta-btn {
-                &.blue {}
-
-                &.black {}
-
-                span {}
-
-                .arrow-svg {
-                  svg {
-                    path {}
-                  }
-                }
-              }
-            }
-
-            .social-proof-wrapper {
-              .social-users-images {
-                img {}
-              }
-
-              .social-users-trust-stack {
-                .users-counter {}
-
-                .social-users-label {}
-              }
-            }
-
-            .social-ranking-badge-wrapper {
-              .social-ranking-badge {
+              .arrow-svg {
                 svg {
-                  g {
-                    path {}
+                  path {}
+                }
+              }
+            }
+          }
+
+          .social-proof-wrapper {
+            .social-users-images {
+              img {}
+            }
+
+            .social-users-trust-stack {
+              .users-counter {
+                font-size: 20px;
+                line-height: 26px;
+              }
+
+              .social-users-label {}
+            }
+          }
+
+          .social-ranking-badge-wrapper {
+            .social-ranking-badge {
+              svg {
+                g {
+                  path {}
+                }
+
+                defs {
+                  linearGradient {
+                    stop {}
                   }
 
-                  defs {
-                    linearGradient {
-                      stop {}
-                    }
-
-                    clipPath {
-                      rect {}
-                    }
+                  clipPath {
+                    rect {}
                   }
                 }
               }
-
-              .social-ranking-label {
-                span {}
-              }
             }
 
-            .swiper-wrapper {}
-
-            .swiper-pagination {}
+            .social-ranking-label {
+              span {}
+            }
           }
+
+          .swiper-wrapper {}
+
+          .swiper-pagination {}
         }
       }
     }
@@ -374,7 +412,6 @@
               span {
                 font-size: 16px;
                 line-height: 21px;
-                font-family: var(--ff-);
               }
 
               .arrow-svg {
@@ -409,74 +446,93 @@
   .digital-hero-section {
     .container {
       .digital-hero-container {
+        padding: 30px 0 40px 0;
+
         .digital-hero-container-content {
           .service-status-label {
             .statu-label-icon {
               svg {}
+            }
+
+            span {}
+          }
+
+          .digital-hero-container-head {
+            font-size: 27px;
+            line-height: 31px;
+          }
+
+          .hero-container-desc {}
+
+          .cta-buttons {
+            padding: 25px 0 34px;
+            gap: 10px;
+
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
 
               span {}
-            }
 
-            .digital-hero-container-head {}
-
-            .hero-container-desc {}
-
-            .cta-buttons {
-              .cta-btn {
-                &.blue {}
-
-                &.black {}
-
-                span {}
-
-                .arrow-svg {
-                  svg {
-                    path {}
-                  }
-                }
-              }
-            }
-
-            .social-proof-wrapper {
-              .social-users-images {
-                img {}
-              }
-
-              .social-users-trust-stack {
-                .users-counter {}
-
-                .social-users-label {}
-              }
-            }
-
-            .social-ranking-badge-wrapper {
-              .social-ranking-badge {
+              .arrow-svg {
                 svg {
-                  g {
-                    path {}
+                  path {}
+                }
+              }
+            }
+          }
+
+          .social-proof-wrapper {
+            flex-direction: column-reverse;
+
+            .social-users-images {
+              img {}
+            }
+
+            .social-users-trust-stack {
+              .users-counter {
+                text-align: center;
+              }
+
+              .social-users-label {
+                padding-top: 0;
+              }
+            }
+          }
+
+          .social-ranking-badge-wrapper {
+            padding-top: 20px;
+            gap: 0;
+
+            .social-ranking-badge {
+              svg {
+                width: 80px;
+
+                g {
+                  path {}
+                }
+
+                defs {
+                  linearGradient {
+                    stop {}
                   }
 
-                  defs {
-                    linearGradient {
-                      stop {}
-                    }
-
-                    clipPath {
-                      rect {}
-                    }
+                  clipPath {
+                    rect {}
                   }
                 }
               }
-
-              .social-ranking-label {
-                span {}
-              }
             }
 
-            .swiper-wrapper {}
-
-            .swiper-pagination {}
+            .social-ranking-label {
+              span {}
+            }
           }
+
+          .swiper-wrapper {}
+
+          .swiper-pagination {}
         }
       }
     }

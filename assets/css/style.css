@@ -398,7 +398,7 @@
                             }
                         }
 
-                        &.black {
+                        &:nth-child(2) {
                             background-color: black;
 
                             &:hover {
@@ -424,32 +424,58 @@
 
                 .social-proof-wrapper {
                     display: flex;
-                    gap: 96px;
                     align-items: center;
+                    gap: 11px;
 
                     .social-users-images {
-                        width: 55px;
-                        height: 55px;
                         display: flex;
+                        align-items: center;
 
-                        img {
-                            border-radius: 50%;
-                            border: 2px solid var(--white);
+                        .user-image {
+                            img {
+                                width: 55px;
+                                height: 55px;
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                display: flex;
+                            }
+                        }
 
-                            &:nth-child(1) {
+                        & :nth-child(1).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--blue);
                             }
+                        }
 
-                            &:nth-child(2) {
+                        & :nth-child(2).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--black);
                                 margin-left: -13px;
                             }
+                        }
 
-                            &:nth-child(3) {
+                        & :nth-child(3).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--blue);
                                 margin-left: -13px;
                             }
                         }
+
+                        /* img {
+                         
+
+                  
+
+                            &:nth-child(3) {
+                       
+                            }
+                        } */
                     }
 
                     .social-users-trust-stack {

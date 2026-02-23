@@ -79,8 +79,6 @@
     &:hover {
         background: white;
         border: 1px solid var(--blue);
-        box-shadow:
-            10px 6px 6px rgba(var(--blue));
 
         span {
             color: var(--blue);
