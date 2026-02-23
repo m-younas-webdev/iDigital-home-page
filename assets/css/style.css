@@ -17,30 +17,39 @@
                     text-decoration: none;
                 }
             }
+        }
 
-            .header-navigations {
-                .header-navigation-list {
-                    display: flex;
+        .header-navigation-wrapper {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            align-items: center;
 
-                    .header-nav-item {
-                        a {
-                            font-family: var(--ff-satoshi);
-                            color: var(--black);
-                            font-size: 18px;
-                            line-height: 26px;
-                            padding: 12px;
-                            border-radius: 14px;
-                            transition: all .3s ease;
+            .header-navigation-list {
+                display: flex;
+                width: 100%;
+                justify-content: center;
 
-                            /* &:hover {
-                                color: var(--white);
-                                background-color: var(--blue);
-                            } */
-                            &:hover {
-                                /* color: var(--white); */
-                                color: var(--blue);
-                                /* background-color: var(--blue); */
-                            }
+                .header-nav-item {
+                    a {
+                        font-family: var(--ff-satoshi);
+                        color: var(--black);
+                        font-size: 18px;
+                        line-height: 26px;
+                        padding: 12px;
+                        border-radius: 14px;
+                        transition: all .3s ease;
+                        max-width: max-content;
+
+                        &:hover {
+                            color: var(--white);
+                            background-color: var(--blue);
+                        }
+
+                        &:hover {
+                            /* color: var(--white); */
+                            /* color: var(--blue); */
+                            /* background-color: var(--blue); */
                         }
                     }
                 }
@@ -69,24 +78,92 @@
                     padding: 4px;
                     border-radius: 50px;
                     gap: 6px;
-                    border: none;
+                    border: 1px solid transparent;
+                    transition: all .3s ease;
 
                     span {
                         font-size: 20px;
                         line-height: 28px;
                         color: var(--white);
                         padding-left: 16px;
+                        min-width: max-content;
+                        transition: all .3s ease;
                     }
 
                     .arrow-svg {
                         padding: 8px;
                         border-radius: 50%;
                         background-color: white;
+                        transition: all .3s ease;
 
-                        svg {}
+                        svg {
+                            display: flex;
+
+                            path {
+                                transition: all .3s ease;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: white;
+                        border: 1px solid var(--blue);
+                        box-shadow:
+                            10px 6px 6px rgba(var(--blue));
+
+                        span {
+                            color: var(--blue);
+                        }
+
+                        .arrow-svg {
+                            background-color: var(--blue);
+
+                            svg {
+                                path {
+                                    fill: var(--white);
+                                }
+                            }
+                        }
                     }
                 }
             }
+        }
+
+        .header-hamburger-menu {
+            width: 30px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            z-index: 100;
+            display: none;
+
+            /* Ensure it's above other content */
+            .bar {
+                width: 100%;
+                height: 3px;
+                background-color: #000000;
+                border-radius: 2px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        /* Active State: Transforms into a Cross */
+        .header-hamburger-menu.active .bar1 {
+            transform: translateY(8.5px) rotate(45deg);
+            /* Move down and rotate */
+        }
+
+        .header-hamburger-menu.active .bar2 {
+            opacity: 0;
+            /* Hide the middle bar */
+        }
+
+        .header-hamburger-menu.active .bar3 {
+            transform: translateY(-8.5px) rotate(-45deg);
+            /* Move up and rotate */
         }
     }
 }
