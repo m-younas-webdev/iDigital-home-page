@@ -16,19 +16,19 @@
           height: 100%;
           width: 70%;
           gap: 30px;
-          padding: 10% 0 0 4%;
-          align-items: start;
           background-color: rgba(0, 0, 0, 0.37);
           backdrop-filter: blur(10px);
           gap: 50px;
-          justify-content: unset;
           transition: all .6s ease;
           opacity: 0;
+          padding-top: 160px;
+          justify-content: unset;
 
           .header-navigation-list {
             flex-direction: column;
             align-items: start;
             gap: 50px;
+            align-items: center;
 
             .header-nav-item {
               a {}
@@ -93,5 +93,128 @@
       visibility: visible;
       opacity: 1;
     }
+  }
+}
+
+@media(max-width:576px) {
+  .digital-header-section {
+    .container {
+      .digital-header-container {
+        .digital-header-logo {
+          font-size: 34px;
+          line-height: 44px;
+
+          a {}
+        }
+
+        .header-navigation-wrapper {
+          .header-navigation-list {
+            gap: 36px;
+
+            .header-nav-item {
+              a {}
+            }
+          }
+
+          .header-cta-button-wrapper {
+            .input-label {
+              input {}
+
+              svg {}
+            }
+
+            .cta-btn {
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+
+          &.header-navigation-wrapper.show {}
+        }
+
+        .header-hamburger-menu {
+          width: 25px;
+          height: 17px;
+          right: 6px;
+          top: 14px;
+
+          span {}
+        }
+
+        .header-hamburger-menu.active .bar3 {
+          transform: translateY(-5.5px) rotate(-45deg);
+        }
+      }
+    }
+
+    .overlay {}
+
+    .overlay.active {}
+  }
+}
+
+@media(max-width:420px) {
+  .digital-header-section {
+    .container {
+      .digital-header-container {
+        .digital-header-logo {
+          a {}
+        }
+
+        .header-navigation-wrapper {
+          width: 100%;
+
+          .header-navigation-list {
+            .header-nav-item {
+              a {}
+            }
+          }
+
+          .header-cta-button-wrapper {
+            .input-label {
+              display: none;
+
+              input {}
+
+              svg {}
+            }
+
+            .cta-btn {
+              span {
+                font-size: 16px;
+                line-height: 21px;
+                font-family: var(--ff-);
+              }
+
+              .arrow-svg {
+                padding: 4px;
+
+                svg {
+                  width: 20px;
+                  height: 20px;
+
+                  path {}
+                }
+              }
+            }
+          }
+
+          &.header-navigation-wrapper.show {}
+        }
+
+        .header-hamburger-menu {
+          span {}
+        }
+      }
+    }
+
+    .overlay {}
+
+    .overlay.active {}
   }
 }
