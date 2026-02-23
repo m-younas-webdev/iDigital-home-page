@@ -100,27 +100,53 @@
   .digital-hero-section {
     .container {
       .digital-hero-container {
-        .service-status-label {
-          .statu-label-icon {
-            svg {}
+        padding-left: 0;
 
-            span {}
+        .digital-hero-container-content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 auto;
+
+          .service-status-label {
+            .statu-label-icon {
+              svg {}
+            }
+
+            span {
+              font-size: 16px;
+              line-height: 20px;
+            }
           }
 
-          .digital-hero-container-head {}
+          .digital-hero-container-head {
+            text-align: center;
+            margin: 0 auto;
+            font-size: clamp(40px, 5vw + 1rem, 60px);
+            line-height: clamp(40px, 5vw + 1rem, 65px);
+          }
 
-          .hero-container-desc {}
+          .hero-container-desc {
+            text-align: center;
+            font-size: 23px;
+            line-height: 33px;
+          }
 
           .cta-buttons {
             .cta-btn {
-              &.blue {}
-
-              &.black {}
-
-              span {}
+              span {
+                font-size: 16px;
+                line-height: 20px;
+              }
 
               .arrow-svg {
+                padding: 4px;
+
                 svg {
+                  width: 18px;
+                  height: 18px;
+
                   path {}
                 }
               }
@@ -241,72 +267,74 @@
   .digital-hero-section {
     .container {
       .digital-hero-container {
-        .service-status-label {
-          .statu-label-icon {
-            svg {}
-
-            span {}
-          }
-
-          .digital-hero-container-head {}
-
-          .hero-container-desc {}
-
-          .cta-buttons {
-            .cta-btn {
-              &.blue {}
-
-              &.black {}
+        .digital-hero-container-content {
+          .service-status-label {
+            .statu-label-icon {
+              svg {}
 
               span {}
+            }
 
-              .arrow-svg {
+            .digital-hero-container-head {}
+
+            .hero-container-desc {}
+
+            .cta-buttons {
+              .cta-btn {
+                &.blue {}
+
+                &.black {}
+
+                span {}
+
+                .arrow-svg {
+                  svg {
+                    path {}
+                  }
+                }
+              }
+            }
+
+            .social-proof-wrapper {
+              .social-users-images {
+                img {}
+              }
+
+              .social-users-trust-stack {
+                .users-counter {}
+
+                .social-users-label {}
+              }
+            }
+
+            .social-ranking-badge-wrapper {
+              .social-ranking-badge {
                 svg {
-                  path {}
-                }
-              }
-            }
-          }
-
-          .social-proof-wrapper {
-            .social-users-images {
-              img {}
-            }
-
-            .social-users-trust-stack {
-              .users-counter {}
-
-              .social-users-label {}
-            }
-          }
-
-          .social-ranking-badge-wrapper {
-            .social-ranking-badge {
-              svg {
-                g {
-                  path {}
-                }
-
-                defs {
-                  linearGradient {
-                    stop {}
+                  g {
+                    path {}
                   }
 
-                  clipPath {
-                    rect {}
+                  defs {
+                    linearGradient {
+                      stop {}
+                    }
+
+                    clipPath {
+                      rect {}
+                    }
                   }
                 }
               }
+
+              .social-ranking-label {
+                span {}
+              }
             }
 
-            .social-ranking-label {
-              span {}
-            }
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
           }
-
-          .swiper-wrapper {}
-
-          .swiper-pagination {}
         }
       }
     }
@@ -381,72 +409,74 @@
   .digital-hero-section {
     .container {
       .digital-hero-container {
-        .service-status-label {
-          .statu-label-icon {
-            svg {}
-
-            span {}
-          }
-
-          .digital-hero-container-head {}
-
-          .hero-container-desc {}
-
-          .cta-buttons {
-            .cta-btn {
-              &.blue {}
-
-              &.black {}
+        .digital-hero-container-content {
+          .service-status-label {
+            .statu-label-icon {
+              svg {}
 
               span {}
+            }
 
-              .arrow-svg {
+            .digital-hero-container-head {}
+
+            .hero-container-desc {}
+
+            .cta-buttons {
+              .cta-btn {
+                &.blue {}
+
+                &.black {}
+
+                span {}
+
+                .arrow-svg {
+                  svg {
+                    path {}
+                  }
+                }
+              }
+            }
+
+            .social-proof-wrapper {
+              .social-users-images {
+                img {}
+              }
+
+              .social-users-trust-stack {
+                .users-counter {}
+
+                .social-users-label {}
+              }
+            }
+
+            .social-ranking-badge-wrapper {
+              .social-ranking-badge {
                 svg {
-                  path {}
-                }
-              }
-            }
-          }
-
-          .social-proof-wrapper {
-            .social-users-images {
-              img {}
-            }
-
-            .social-users-trust-stack {
-              .users-counter {}
-
-              .social-users-label {}
-            }
-          }
-
-          .social-ranking-badge-wrapper {
-            .social-ranking-badge {
-              svg {
-                g {
-                  path {}
-                }
-
-                defs {
-                  linearGradient {
-                    stop {}
+                  g {
+                    path {}
                   }
 
-                  clipPath {
-                    rect {}
+                  defs {
+                    linearGradient {
+                      stop {}
+                    }
+
+                    clipPath {
+                      rect {}
+                    }
                   }
                 }
               }
+
+              .social-ranking-label {
+                span {}
+              }
             }
 
-            .social-ranking-label {
-              span {}
-            }
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
           }
-
-          .swiper-wrapper {}
-
-          .swiper-pagination {}
         }
       }
     }

@@ -3,131 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDigital Smooth Menu</title>
+    <title>Digital Hero Section</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@600&f[]=satoshi@400,700&display=swap"
+      rel="stylesheet" />
     <style>
+      :root {
+        --ff-clash: "Clash Display", sans-serif;
+        --ff-satoshi: "Satoshi", sans-serif;
+        --white: #ffffff;
+      }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: sans-serif;
       }
 
-      /* Header Styles */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        background: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      body {
+        font-family: var(--ff-satoshi);
+      }
+
+      .digital-hero-section {
+        width: 100%;
+        height: 100vh;
         position: relative;
-        z-index: 1001;
-      }
-
-      .logo {
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      /* Hamburger Button */
-      .toggle-btn {
-        cursor: pointer;
+        /* Background image from search results */
+        background-image: url("http://googleusercontent.com/image_collection/image_retrieval/7189005639865173607_0");
+        background-size: cover;
+        background-position: center right; /* Highlights the image on the right side */
         display: flex;
-        flex-direction: column;
-        gap: 5px;
-        border: none;
-        background: none;
-      }
-      .toggle-btn span {
-        width: 30px;
-        height: 3px;
-        background: black;
-        transition: 0.3s;
+        align-items: center;
+        overflow: hidden;
       }
 
-      /* Overlay - Smooth Fade */
-      .overlay {
-        position: fixed;
+      /* Gradient overlay to highlight left-sided content */
+      .digital-hero-section::before {
+        content: "";
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 999;
-        /* Smooth Logic */
-        opacity: 0;
-        visibility: hidden;
-        transition:
-          opacity 0.6s ease,
-          visibility 0.6s ease;
-      }
-      .overlay.active {
-        opacity: 1;
-        visibility: visible;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8) 30%,
+          rgba(0, 0, 0, 0) 70%
+        );
+        z-index: 1;
       }
 
-      /* Menu Bar - Smooth Slide */
-      .menu-bar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 550px;
-        max-width: 80%; /* For small screens */
-        height: 100%;
-        background: white;
-        z-index: 1000;
-        padding: 100px 40px;
-        /* Smooth Logic */
-        transform: translateX(100%);
-        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .menu-bar.active {
-        transform: translateX(0);
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
       }
 
-      .menu-bar ul {
-        list-style: none;
+      .digital-hero-container {
+        max-width: 600px; /* Constrains content to the left side */
+        color: var(--white);
       }
-      .menu-bar li {
-        margin: 20px 0;
-        font-size: 20px;
+
+      .digital-hero-container-head {
+        font-family: var(--ff-clash);
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+
+      .hero-container-desc {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+
+      .cta-btn {
+        padding: 15px 35px;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 50px;
         cursor: pointer;
+        background-color: #0056ff;
+        color: white;
+        transition: transform 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
+        .digital-hero-container-head {
+          font-size: 2.5rem;
+        }
+        .digital-hero-section::before {
+          background: rgba(
+            0,
+            0,
+            0,
+            0.6
+          ); /* Darken whole overlay for mobile readability */
+        }
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="logo">IDigital</div>
-      <button class="toggle-btn" id="menuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-
-    <div class="overlay" id="overlay"></div>
-
-    <nav class="menu-bar" id="menuBar">
-      <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Support</li>
-        <li>Shop</li>
-      </ul>
-    </nav>
-
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const menuBar = document.getElementById("menuBar");
-      const overlay = document.getElementById("overlay");
-
-      const toggle = () => {
-        menuBar.classList.toggle("active");
-        overlay.classList.toggle("active");
-      };
-
-      menuBtn.addEventListener("click", toggle);
-      overlay.addEventListener("click", toggle);
-    </script>
+    <section class="digital-hero-section">
+      <div class="container">
+        <div class="digital-hero-container">
+          <h1 class="digital-hero-container-head">
+            We Provide #1 Data Recovery and Repair Services!
+          </h1>
+          <p class="hero-container-desc">
+            Women operated business & #1 Rated in the State of Louisiana.
+            Professional solutions for all your digital needs.
+          </p>
+          <div class="cta-buttons">
+            <button class="cta-btn">Start Your Repair</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
