@@ -70,63 +70,6 @@
                         display: flex;
                     }
                 }
-
-                .cta-btn {
-                    display: flex;
-                    align-items: center;
-                    background-color: var(--blue);
-                    padding: 4px;
-                    border-radius: 50px;
-                    gap: 6px;
-                    border: 1px solid transparent;
-                    transition: all .3s ease;
-                    font-family: 'Satoshi', sans-serif;
-
-                    span {
-                        font-size: 20px;
-                        line-height: 28px;
-                        color: var(--white);
-                        padding-left: 16px;
-                        min-width: max-content;
-                        transition: all .3s ease;
-                    }
-
-                    .arrow-svg {
-                        padding: 8px;
-                        border-radius: 50%;
-                        background-color: white;
-                        transition: all .3s ease;
-
-                        svg {
-                            display: flex;
-
-                            path {
-                                transition: all .3s ease;
-                            }
-                        }
-                    }
-
-                    &:hover {
-                        background: white;
-                        border: 1px solid var(--blue);
-                        box-shadow:
-                            10px 6px 6px rgba(var(--blue));
-
-                        span {
-                            color: var(--blue);
-                        }
-
-                        .arrow-svg {
-                            background-color: var(--blue);
-
-                            svg {
-                                path {
-                                    fill: var(--white);
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
 
@@ -141,7 +84,6 @@
             z-index: 100;
             display: none;
 
-            /* Ensure it's above other content */
             .bar {
                 width: 100%;
                 height: 3px;
@@ -168,3 +110,172 @@
         }
     }
 }
+
+/* END :: Header Section 
+*********************************** */
+/* #########################  */
+/* #########################  */
+/* #########################  */
+/* #########################  */
+/* #########################  */
+/* START :: Hero Section 
+************************************** */
+.digital-hero-section {
+    border-radius: 40px;
+
+    .container {
+        .digital-hero-container {
+            .service-status-label {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+                padding: 4px;
+                border: 1px solid #E2E2E2;
+                max-width: max-content;
+                border-radius: 50px;
+
+                .statu-label-icon {
+                    padding: 6px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    background-color: var(--blue);
+                    max-width: max-content;
+
+                    svg {}
+                }
+
+                span {
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: var(--black);
+                    font-family: var(--ff-satoshi);
+                    padding-right: 13px;
+                }
+            }
+
+            .digital-hero-container-head {
+                font-size: 70px;
+                line-height: 76px;
+                color: var(--black);
+                font-family: var(--ff-clash);
+                font-weight: 500;
+                max-width: 680px;
+                padding: 30px 0 17px;
+            }
+
+            .hero-container-desc {
+                font-size: 26px;
+                line-height: 40px;
+                font-family: var(--ff-satoshi);
+                color: var(--black);
+                max-width: 540px;
+                word-spacing: 3px;
+            }
+
+            .cta-buttons {
+                display: flex;
+                gap: 14px;
+                padding: 36px 0 46px;
+
+                .cta-btn {
+                    &.black {
+                        background-color: black;
+
+                        &:hover {
+                            background-color: white;
+
+                            span {
+                                color: var(--black);
+                            }
+
+                            .arrow-svg {
+                                background-color: black;
+
+                                svg {
+                                    path {
+                                        fill: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social-proof-wrapper {
+                display: flex;
+                gap: 96px;
+                align-items: center;
+
+                .social-users-images {
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+
+                    img {
+                        border-radius: 50%;
+                        border: 2px solid var(--white);
+
+                        &:nth-child(1) {
+                            background-color: var(--blue);
+                        }
+
+                        &:nth-child(2) {
+                            background-color: var(--black);
+                            margin-left: -13px;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: var(--blue);
+                            margin-left: -13px;
+                        }
+                    }
+                }
+
+                .social-users-trust-stack {
+                    .users-counter {
+                        font-size: 24px;
+                        line-height: 30px;
+                        font-weight: 700;
+                        font-family: var(--ff-satoshi);
+                    }
+
+                    .social-users-label {
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: 500;
+                        color: var(--black);
+                        font-family: var(--ff-satoshi);
+                        padding-top: 6px;
+                    }
+                }
+            }
+
+            .social-ranking-badge-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 41px 0 46px;
+
+                .social-ranking-label {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-family: var(--ff-satoshi);
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
+        }
+    }
+}
+
+/* END :: Hero Section 
+************************************** */

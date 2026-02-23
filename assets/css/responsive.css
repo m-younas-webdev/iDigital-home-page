@@ -94,6 +94,85 @@
       opacity: 1;
     }
   }
+
+  /* START :: Hero Section 
+  ****************************** */
+  .digital-hero-section {
+    .container {
+      .digital-hero-container {
+        .service-status-label {
+          .statu-label-icon {
+            svg {}
+
+            span {}
+          }
+
+          .digital-hero-container-head {}
+
+          .hero-container-desc {}
+
+          .cta-buttons {
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+
+          .social-proof-wrapper {
+            .social-users-images {
+              img {}
+            }
+
+            .social-users-trust-stack {
+              .users-counter {}
+
+              .social-users-label {}
+            }
+          }
+
+          .social-ranking-badge-wrapper {
+            .social-ranking-badge {
+              svg {
+                g {
+                  path {}
+                }
+
+                defs {
+                  linearGradient {
+                    stop {}
+                  }
+
+                  clipPath {
+                    rect {}
+                  }
+                }
+              }
+            }
+
+            .social-ranking-label {
+              span {}
+            }
+          }
+
+          .swiper-wrapper {}
+
+          .swiper-pagination {}
+        }
+      }
+    }
+  }
+
+  /* END :: Hero Section 
+********************************** */
 }
 
 @media(max-width:576px) {
@@ -156,6 +235,85 @@
 
     .overlay.active {}
   }
+
+  /* START :: Hero Section 
+  ****************************** */
+  .digital-hero-section {
+    .container {
+      .digital-hero-container {
+        .service-status-label {
+          .statu-label-icon {
+            svg {}
+
+            span {}
+          }
+
+          .digital-hero-container-head {}
+
+          .hero-container-desc {}
+
+          .cta-buttons {
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+
+          .social-proof-wrapper {
+            .social-users-images {
+              img {}
+            }
+
+            .social-users-trust-stack {
+              .users-counter {}
+
+              .social-users-label {}
+            }
+          }
+
+          .social-ranking-badge-wrapper {
+            .social-ranking-badge {
+              svg {
+                g {
+                  path {}
+                }
+
+                defs {
+                  linearGradient {
+                    stop {}
+                  }
+
+                  clipPath {
+                    rect {}
+                  }
+                }
+              }
+            }
+
+            .social-ranking-label {
+              span {}
+            }
+          }
+
+          .swiper-wrapper {}
+
+          .swiper-pagination {}
+        }
+      }
+    }
+  }
+
+  /* END :: Hero Section 
+********************************** */
 }
 
 @media(max-width:420px) {
@@ -217,4 +375,154 @@
 
     .overlay.active {}
   }
+
+  /* START :: Hero Section 
+  ****************************** */
+  .digital-hero-section {
+    .container {
+      .digital-hero-container {
+        .service-status-label {
+          .statu-label-icon {
+            svg {}
+
+            span {}
+          }
+
+          .digital-hero-container-head {}
+
+          .hero-container-desc {}
+
+          .cta-buttons {
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+
+          .social-proof-wrapper {
+            .social-users-images {
+              img {}
+            }
+
+            .social-users-trust-stack {
+              .users-counter {}
+
+              .social-users-label {}
+            }
+          }
+
+          .social-ranking-badge-wrapper {
+            .social-ranking-badge {
+              svg {
+                g {
+                  path {}
+                }
+
+                defs {
+                  linearGradient {
+                    stop {}
+                  }
+
+                  clipPath {
+                    rect {}
+                  }
+                }
+              }
+            }
+
+            .social-ranking-label {
+              span {}
+            }
+          }
+
+          .swiper-wrapper {}
+
+          .swiper-pagination {}
+        }
+      }
+    }
+  }
+
+  /* END :: Hero Section 
+********************************** */
 }
+
+/* START :: Hero Section 
+  ****************************** */
+/* .digital-hero-section {
+  .container {
+    .digital-hero-container {
+      .service-status-label {
+        .statu-label-icon {
+          svg {}
+          span {}
+        }
+
+        .digital-hero-container-head {}
+
+        .hero-container-desc {}
+
+        .cta-buttons {
+          .cta-btn {
+            &.blue {}
+            &.black {}
+            span {}
+            .arrow-svg {
+              svg {
+                path {}
+              }
+            }
+          }
+        }
+
+        .social-proof-wrapper {
+          .social-users-images {
+            img {}
+          }
+
+          .social-users-trust-stack {
+            .users-counter {}
+            .social-users-label {}
+          }
+        }
+
+        .social-ranking-badge-wrapper {
+          .social-ranking-badge {
+            svg {
+              g {
+                path {}
+              }
+              defs {
+                linearGradient {
+                  stop {}
+                }
+                clipPath {
+                  rect {}
+                }
+              }
+            }
+          }
+
+          .social-ranking-label {
+            span {}
+          }
+        }
+
+        .swiper-wrapper {}
+
+        .swiper-pagination {}
+      }
+    }
+  }
+} */
+/* END :: Hero Section 
+********************************** */

@@ -11,6 +11,14 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Regular.otf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* #################  */
 /* #################  */
 /* #################  */
@@ -24,14 +32,70 @@
 }
 
 :root {
-    --primary-color: #F6B100;
-    --secondary-color: #181A20;
-    --ff-urbanist: "Urbanist", sans-serif;
-    --quick-silver: #9F9F9F;
+    --ff-clash: 'clash Display', sans-serif;
     --ff-satoshi: 'Satoshi', sans-serif;
     --black: #000000;
     --white: #ffffff;
     --blue: #0F63DC;
+}
+
+/* CTA button  */
+.cta-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 4px;
+    border-radius: 50px;
+    gap: 6px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    font-family: 'Satoshi', sans-serif;
+    cursor: pointer;
+
+    span {
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--white);
+        padding-left: 16px;
+        min-width: max-content;
+        transition: all .3s ease;
+    }
+
+    .arrow-svg {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: white;
+        transition: all .3s ease;
+
+        svg {
+            display: flex;
+
+            path {
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    &:hover {
+        background: white;
+        border: 1px solid var(--blue);
+        box-shadow:
+            10px 6px 6px rgba(var(--blue));
+
+        span {
+            color: var(--blue);
+        }
+
+        .arrow-svg {
+            background-color: var(--blue);
+
+            svg {
+                path {
+                    fill: var(--white);
+                }
+            }
+        }
+    }
 }
 
 img {
