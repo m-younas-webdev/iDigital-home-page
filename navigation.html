@@ -3,130 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Hero Section</title>
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=clash-display@600&f[]=satoshi@400,700&display=swap"
-      rel="stylesheet" />
+    <title>Seamless Logo Slider</title>
     <style>
-      :root {
-        --ff-clash: "Clash Display", sans-serif;
-        --ff-satoshi: "Satoshi", sans-serif;
-        --white: #ffffff;
-      }
-
-      * {
+      body {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: var(--ff-satoshi);
-      }
-
-      .digital-hero-section {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        /* Background image from search results */
-        background-image: url("http://googleusercontent.com/image_collection/image_retrieval/7189005639865173607_0");
-        background-size: cover;
-        background-position: center right; /* Highlights the image on the right side */
         display: flex;
         align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #f8f9fa;
+      }
+
+      /* The container that hides the overflow */
+      .logos-slider {
         overflow: hidden;
-      }
-
-      /* Gradient overlay to highlight left-sided content */
-      .digital-hero-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.8) 30%,
-          rgba(0, 0, 0, 0) 70%
-        );
-        z-index: 1;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        width: 100%;
+        padding: 30px 0;
+        background: white;
+        white-space: nowrap;
         position: relative;
-        z-index: 2;
+        width: 100%;
       }
 
-      .digital-hero-container {
-        max-width: 600px; /* Constrains content to the left side */
-        color: var(--white);
+      /* The container that actually moves */
+      .logos-slide {
+        display: inline-block;
+        animation: 25s slide infinite linear;
       }
 
-      .digital-hero-container-head {
-        font-family: var(--ff-clash);
-        font-size: 3.5rem;
-        line-height: 1.1;
-        margin-bottom: 20px;
+      .logos-slide img {
+        height: 50px;
+        margin: 0 40px;
+        vertical-align: middle;
       }
 
-      .hero-container-desc {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-        opacity: 0.9;
-      }
-
-      .cta-btn {
-        padding: 15px 35px;
-        font-size: 1rem;
-        font-weight: 700;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        background-color: #0056ff;
-        color: white;
-        transition: transform 0.3s ease;
-      }
-
-      .cta-btn:hover {
-        transform: translateY(-3px);
-      }
-
-      @media (max-width: 768px) {
-        .digital-hero-container-head {
-          font-size: 2.5rem;
+      /* The animation for the smooth movement */
+      @keyframes slide {
+        from {
+          transform: translateX(0);
         }
-        .digital-hero-section::before {
-          background: rgba(
-            0,
-            0,
-            0,
-            0.6
-          ); /* Darken whole overlay for mobile readability */
+        to {
+          transform: translateX(-100%);
         }
+      }
+
+      /* Pause on hover (Optional) */
+      .logos-slider:hover .logos-slide {
+        animation-play-state: paused;
       }
     </style>
   </head>
   <body>
-    <section class="digital-hero-section">
-      <div class="container">
-        <div class="digital-hero-container">
-          <h1 class="digital-hero-container-head">
-            We Provide #1 Data Recovery and Repair Services!
-          </h1>
-          <p class="hero-container-desc">
-            Women operated business & #1 Rated in the State of Louisiana.
-            Professional solutions for all your digital needs.
-          </p>
-          <div class="cta-buttons">
-            <button class="cta-btn">Start Your Repair</button>
-          </div>
-        </div>
+    <div class="logos-slider">
+      <div class="logos-slide" id="slider">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+          alt="Google" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+          alt="IBM" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+          alt="Amazon" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+          alt="Microsoft" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
+          alt="Salesforce" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+          alt="Meta" />
       </div>
-    </section>
+    </div>
+
+    <script>
+      // This script clones the slider once to ensure a seamless "no-blink" loop
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos-slider").appendChild(copy);
+    </script>
   </body>
 </html>
