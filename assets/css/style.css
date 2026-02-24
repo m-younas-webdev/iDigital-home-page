@@ -540,78 +540,73 @@
 .partners-section {
     margin: 118px 0 140px;
 
-    .container {
-        .partners-container {
-            .partner-container-head {
-                font-family: var(--ff-clash);
-                color: var(--black);
-                text-align: center;
-                padding: 22px 0 36px;
-            }
+    .partners-container {
+        .section-title {
+            padding: 22px 0 36px;
+        }
 
-            .partners-logos-containers {
+        .partners-logos-containers {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            .partners-logos-container {
                 display: flex;
-                flex-direction: column;
-                gap: 18px;
+                overflow: hidden;
+                width: 100%;
+                gap: 17px;
 
-                .partners-logos-container {
+                .partner-logo-list {
                     display: flex;
-                    overflow: hidden;
-                    width: 100%;
+                    flex-shrink: 0;
                     gap: 17px;
+                    animation: slide-primary 25s infinite linear;
 
-                    .partner-logo-list {
-                        display: flex;
-                        flex-shrink: 0;
-                        gap: 17px;
-                        animation: slide-primary 25s infinite linear;
+                    .partner-logo-item {
+                        width: 220px;
+                        height: 110px;
+                        background-color: #4C4C4C0D;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 13px;
 
-                        .partner-logo-item {
-                            width: 220px;
-                            height: 110px;
-                            background-color: #4C4C4C0D;
-                            display: grid;
-                            place-items: center;
-                            border-radius: 13px;
+                        .logo-image {
+                            width: 132px;
 
-                            .logo-image {
-                                width: 132px;
-
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                            img {
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
                 }
+            }
 
-                & :nth-child(2).partners-logos-container {
+            & :nth-child(2).partners-logos-container {
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+
+                .partner-logo-list {
                     display: flex;
-                    overflow: hidden;
-                    width: 100%;
+                    flex-shrink: 0;
+                    gap: 17px;
+                    animation: slide-secondary 25s infinite linear;
 
-                    .partner-logo-list {
-                        display: flex;
-                        flex-shrink: 0;
-                        gap: 17px;
-                        animation: slide-secondary 25s infinite linear;
+                    .partner-logo-item {
+                        width: 220px;
+                        height: 110px;
+                        background-color: #4C4C4C0D;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 13px;
 
-                        .partner-logo-item {
-                            width: 220px;
-                            height: 110px;
-                            background-color: #4C4C4C0D;
-                            display: grid;
-                            place-items: center;
-                            border-radius: 13px;
+                        .logo-image {
+                            width: 132px;
 
-                            .logo-image {
-                                width: 132px;
-
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                            img {
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
@@ -644,4 +639,80 @@
 }
 
 /* END :: Partner Section 
+************************************** */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* #############################  */
+/* START :: Repair Section 
+************************************** */
+.repair-section {
+    .container {
+        .repair-container {
+            padding: 55px;
+            background-color: black;
+
+            .title-label {
+                color: var(--white);
+                border-color: var(--white);
+
+                &::before {
+                    background: white;
+                }
+            }
+
+            .section-title {
+                padding: 22px 0 12px;
+                color: var(--white);
+            }
+
+            .section-desc {
+                padding-bottom: 50px;
+                color: var(--white);
+            }
+
+            .repair-cards-wrapper {
+                .repair-card {
+                    aspect-ratio: 400/470;
+                    width: 400px;
+                    background: var(--white);
+                    border-radius: 22px;
+                    padding: 30px 36px 23px 28px;
+                    border-radius: 22px;
+
+                    .card-image-wrapper {
+                        background-color: #F7F7F7;
+
+                        .repair-card-header {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .card-label {
+                                font-size: 10px;
+                                line-height: 12px;
+                                color: var(--black);
+                                padding: 4px 8px;
+                                background-color: #FFC633;
+                                border-radius: 92px;
+                                font-family: var(--ff-satoshi);
+                            }
+
+                            svg {}
+                        }
+
+                        .repair-card-image {
+                            background: red;
+
+                            img {}
+                        }
+                    }
+
+                    .card-title {}
+                }
+            }
+        }
+    }
+}
+
+/* END :: Repair Section 
 ************************************** */
