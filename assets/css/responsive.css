@@ -219,10 +219,12 @@
 ------------------------------------- */
 @media(max-width:768px) {
   .partners-section {
+    margin: 73px 0 80px;
+
     .container {
       .partners-container {
         .partner-container-head {
-          padding: 16px 0 26px;
+          padding: 22px 0 32px;
         }
 
         .partners-logos-containers {
@@ -437,6 +439,8 @@
     .container {
       .digital-header-container {
         .digital-header-logo {
+          font-size: 30px;
+
           a {}
         }
 
@@ -504,8 +508,8 @@
           }
 
           .digital-hero-container-head {
-            font-size: 27px;
-            line-height: 31px;
+            font-size: 33px;
+            line-height: 38px;
           }
 
           .hero-container-desc {}
@@ -513,20 +517,6 @@
           .cta-buttons {
             padding: 25px 0 34px;
             gap: 10px;
-
-            .cta-btn {
-              &.blue {}
-
-              &.black {}
-
-              span {}
-
-              .arrow-svg {
-                svg {
-                  path {}
-                }
-              }
-            }
           }
 
           .social-proof-wrapper {
@@ -586,6 +576,53 @@
 
   /* END :: Hero Section 
 ********************************** */
+  .partners-section {
+    margin: 50px 0 70px;
+
+    .container {
+      .partners-container {
+        .partner-container-head {}
+
+        .partners-logos-containers {
+          gap: 16px;
+
+          .partners-logos-container {
+            gap: 13px;
+
+            .partner-logo-list {
+              gap: 13px;
+
+              .partner-logo-item {
+                height: 42px;
+                width: 85px;
+
+                .logo-image {
+                  width: 50px;
+
+                  img {}
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .partner-logo-list {
+                .partner-logo-item {
+                  height: 42px;
+                  width: 85px;
+
+                  .logo-image {
+                    width: 50px;
+
+                    img {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* START :: Hero Section 

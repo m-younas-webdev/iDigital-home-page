@@ -381,6 +381,7 @@
 
                             &:hover {
                                 background-color: var(--black);
+                                border: 1px solid white;
 
                                 span {
                                     color: var(--white);
@@ -399,10 +400,13 @@
                         }
 
                         &:nth-child(2) {
+                            max-width: max-content;
+                            gap: 18px;
                             background-color: black;
 
                             &:hover {
                                 background-color: white;
+                                border: 1px solid black;
 
                                 span {
                                     color: var(--black);
@@ -546,10 +550,15 @@
             }
 
             .partners-logos-containers {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
                 .partners-logos-container {
                     display: flex;
                     overflow: hidden;
                     width: 100%;
+                    gap: 17px;
 
                     .partner-logo-list {
                         display: flex;

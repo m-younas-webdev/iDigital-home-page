@@ -51,6 +51,7 @@
     transition: all .3s ease;
     font-family: 'Satoshi', sans-serif;
     cursor: pointer;
+    max-width: max-content;
 
     span {
         font-size: 20px;
@@ -139,7 +140,39 @@ img {
 
 @media (max-width:992px) {
     .partner-container-head {
-        font-size: clamp(30px, 4vw + 1rem, 40px);
-        font-size: 5.5vw;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .partner-container-head {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width:576px) {
+    .partner-container-head {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .title-label {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 1px 9px 1px 6px;
+
+        &::before {
+            margin-bottom: 1px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .partner-container-head {
+        font-size: 26px;
+        line-height: 6.5vw;
     }
 }
