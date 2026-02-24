@@ -538,33 +538,7 @@
 
     .container {
         .partners-container {
-            .partner-container-label {
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 16px;
-                border-radius: 82px;
-                border: 1px solid #00000066;
-                max-width: max-content;
-                margin: 0 auto;
-                font-family: var(--ff-satoshi);
-                padding: 3px 13px 3px 9px;
-
-                &::before {
-                    content: '';
-                    width: 6px;
-                    height: 5px;
-                    border-radius: 50%;
-                    background: #000;
-                    display: inline-block;
-                    margin-right: 8px;
-                    margin-bottom: 3px;
-                }
-            }
-
             .partner-container-head {
-                font-size: 50px;
-                line-height: 60px;
-                font-weight: 500;
                 font-family: var(--ff-clash);
                 color: var(--black);
                 text-align: center;

@@ -211,6 +211,56 @@
 ********************************** */
 }
 
+/* ###########################  */
+/* ###########################  */
+/* ###########################  */
+/* ###########################  */
+/* Media Query :: 768px
+------------------------------------- */
+@media(max-width:768px) {
+  .partners-section {
+    .container {
+      .partners-container {
+        .partner-container-head {
+          padding: 16px 0 26px;
+        }
+
+        .partners-logos-containers {
+          .partners-logos-container {
+            .partner-logo-list {
+              .partner-logo-item {
+                height: 65px;
+                width: 130px;
+
+                .logo-image {
+                  width: 75px;
+
+                  img {}
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .partner-logo-list {
+                .partner-logo-item {
+                  height: 65px;
+                  width: 130px;
+
+                  .logo-image {
+                    width: 75px;
+
+                    img {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media(max-width:576px) {
   .digital-header-section {
     .container {
