@@ -651,6 +651,7 @@
         .repair-container {
             padding: 55px;
             background-color: black;
+            border-radius: 40px;
 
             .title-label {
                 color: var(--white);
@@ -671,20 +672,32 @@
                 color: var(--white);
             }
 
-            .repair-cards-wrapper {
+            .repair-cards-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 22px;
+                width: 100%;
+
                 .repair-card {
                     aspect-ratio: 400/470;
                     width: 400px;
                     background: var(--white);
                     border-radius: 22px;
-                    padding: 30px 36px 23px 28px;
+                    padding: 17px 15px 23px 15px;
                     border-radius: 22px;
 
                     .card-image-wrapper {
                         background-color: #F7F7F7;
+                        position: relative;
+                        padding: 13px;
+                        bottom: 0;
 
                         .repair-card-header {
+                            position: absolute;
                             display: flex;
+                            top: 13px;
+                            right: 21px;
+                            left: 13px;
                             justify-content: space-between;
 
                             .card-label {
@@ -696,18 +709,50 @@
                                 border-radius: 92px;
                                 font-family: var(--ff-satoshi);
                             }
-
-                            svg {}
                         }
 
                         .repair-card-image {
-                            background: red;
+                            img {
+                                margin-top: 6px;
+                                aspect-ratio: 100 / 80;
+                            }
+                        }
 
-                            img {}
+                        >svg {
+                            width: 100%;
+                            margin: 0 auto;
                         }
                     }
 
-                    .card-title {}
+                    .card-title {
+                        font-size: 32px;
+                        line-height: 42px;
+                        font-weight: 500;
+                        color: #0A1519;
+                        font-family: var(--ff-clash);
+                        padding: 32px 0 18px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    .cta-btn {
+                        margin: 0 auto;
+
+                        span {
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 500;
+                        }
+
+                        .arrow-svg {
+                            padding: 8px;
+
+                            svg {
+                                width: 13px;
+                                height: 14px;
+                            }
+                        }
+                    }
                 }
             }
         }
