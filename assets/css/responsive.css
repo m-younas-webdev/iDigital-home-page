@@ -209,6 +209,54 @@
 
   /* END :: Hero Section 
 ********************************** */
+  /* START :: Repair Section 
+********************************** */
+  .repair-section {
+    .container {
+      .repair-container {
+        .title-label {
+          &::before {}
+        }
+
+        .section-title {}
+
+        .section-desc {
+          width: 75%;
+        }
+
+        .repair-cards-container {
+          grid-template-columns: repeat(2, 1fr);
+
+          .repair-card {
+            .card-image-wrapper {
+              .repair-card-header {
+                .card-label {}
+              }
+
+              .repair-card-image {
+                img {}
+              }
+
+              >svg {}
+            }
+
+            .card-title {}
+
+            .cta-btn {
+              span {}
+
+              .arrow-svg {
+                svg {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Hero Section 
+********************************** */
 }
 
 /* ###########################  */
