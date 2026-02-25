@@ -140,7 +140,7 @@
             max-width: 70%;
           }
 
-          .cta-buttons {
+          /* .cta-buttons {
             .cta-btn {
               span {
                 font-size: 16px;
@@ -158,8 +158,7 @@
                 }
               }
             }
-          }
-
+          } */
           .social-proof-wrapper {
             .social-users-images {
               img {}
@@ -209,6 +208,11 @@
 
   /* END :: Hero Section 
 ********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
   /* START :: Repair Section 
 ********************************** */
   .repair-section {
@@ -255,7 +259,66 @@
     }
   }
 
-  /* END :: Hero Section 
+  /* END :: Repair Section 
+********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Services Section 
+********************************** */
+  .services-section {
+    .container {
+      .services-container {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .services-image {
+          img {}
+        }
+
+        .services-content {
+          align-items: center;
+
+          .title-label {}
+
+          .section-title {}
+
+          .service-detail-wrapper {
+            .services-detail {
+              width: 90%;
+              margin: 0 auto;
+              font-size: 20px;
+              line-height: 30px;
+              text-align: center;
+            }
+          }
+
+          .cta-buttons {
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Services Section 
 ********************************** */
 }
 
@@ -269,14 +332,27 @@
   .partners-section {
     margin: 73px 0 80px;
 
-    .container {
-      .partners-container {
-        .partner-container-head {
-          padding: 22px 0 32px;
-        }
+    .partners-container {
+      .partner-container-head {
+        padding: 22px 0 32px;
+      }
 
-        .partners-logos-containers {
-          .partners-logos-container {
+      .partners-logos-containers {
+        .partners-logos-container {
+          .partner-logo-list {
+            .partner-logo-item {
+              height: 65px;
+              width: 130px;
+
+              .logo-image {
+                width: 75px;
+
+                img {}
+              }
+            }
+          }
+
+          &:nth-child(2) {
             .partner-logo-list {
               .partner-logo-item {
                 height: 65px;
@@ -286,21 +362,6 @@
                   width: 75px;
 
                   img {}
-                }
-              }
-            }
-
-            &:nth-child(2) {
-              .partner-logo-list {
-                .partner-logo-item {
-                  height: 65px;
-                  width: 130px;
-
-                  .logo-image {
-                    width: 75px;
-
-                    img {}
-                  }
                 }
               }
             }
@@ -414,21 +475,7 @@
 
           .cta-buttons {
             padding: 31px 0 40px;
-            flex-direction: column;
-
-            .cta-btn {
-              &.blue {}
-
-              &.black {}
-
-              span {}
-
-              .arrow-svg {
-                svg {
-                  path {}
-                }
-              }
-            }
+            /* flex-direction: column; */
           }
 
           .social-proof-wrapper {
@@ -479,6 +526,59 @@
   }
 
   /* END :: Hero Section 
+********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Repair Section */
+  .services-section {
+    padding: 90px 0;
+
+    .container {
+      .services-container {
+        .services-image {
+          img {}
+        }
+
+        .services-content {
+          .title-label {}
+
+          .section-title {
+            padding: 14px 10px;
+          }
+
+          .service-detail-wrapper {
+            .services-detail {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+
+          .cta-buttons {
+            flex-direction: row;
+
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Services Section 
 ********************************** */
 }
 
@@ -627,19 +727,32 @@
   .partners-section {
     margin: 50px 0 70px;
 
-    .container {
-      .partners-container {
-        .partner-container-head {}
+    .partners-container {
+      .partner-container-head {}
 
-        .partners-logos-containers {
-          gap: 16px;
+      .partners-logos-containers {
+        gap: 16px;
 
-          .partners-logos-container {
+        .partners-logos-container {
+          gap: 13px;
+
+          .partner-logo-list {
             gap: 13px;
 
-            .partner-logo-list {
-              gap: 13px;
+            .partner-logo-item {
+              height: 42px;
+              width: 85px;
 
+              .logo-image {
+                width: 50px;
+
+                img {}
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            .partner-logo-list {
               .partner-logo-item {
                 height: 42px;
                 width: 85px;
@@ -651,95 +764,64 @@
                 }
               }
             }
-
-            &:nth-child(2) {
-              .partner-logo-list {
-                .partner-logo-item {
-                  height: 42px;
-                  width: 85px;
-
-                  .logo-image {
-                    width: 50px;
-
-                    img {}
-                  }
-                }
-              }
-            }
           }
         }
       }
     }
   }
-}
 
-/* START :: Hero Section 
-  ****************************** */
-/* .digital-hero-section {
-  .container {
-    .digital-hero-container {
-      .service-status-label {
-        .statu-label-icon {
-          svg {}
-          span {}
-        }
-
-        .digital-hero-container-head {}
-
-        .hero-container-desc {}
-
-        .cta-buttons {
-          .cta-btn {
-            &.blue {}
-            &.black {}
-            span {}
-            .arrow-svg {
-              svg {
-                path {}
-              }
-            }
-          }
-        }
-
-        .social-proof-wrapper {
-          .social-users-images {
-            img {}
-          }
-
-          .social-users-trust-stack {
-            .users-counter {}
-            .social-users-label {}
-          }
-        }
-
-        .social-ranking-badge-wrapper {
-          .social-ranking-badge {
-            svg {
-              g {
-                path {}
-              }
-              defs {
-                linearGradient {
-                  stop {}
-                }
-                clipPath {
-                  rect {}
-                }
-              }
-            }
-          }
-
-          .social-ranking-label {
-            span {}
-          }
-        }
-
-        .swiper-wrapper {}
-
-        .swiper-pagination {}
-      }
-    }
-  }
-} */
-/* END :: Hero Section 
+  /* END :: Partner Section 
 ********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Services Section  
+  **********************************  */
+  .services-section {
+    padding: 50px 0;
+
+    .container {
+      .services-container {
+        .services-image {
+          img {}
+        }
+
+        .services-content {
+          .title-label {}
+
+          .section-title {}
+
+          .service-detail-wrapper {
+            .services-detail {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          .cta-buttons {
+            flex-direction: column;
+
+            .cta-btn {
+              &.blue {}
+
+              &.black {}
+
+              span {}
+
+              .arrow-svg {
+                svg {
+                  path {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* START :: Services Section  
+  **********************************  */
+}

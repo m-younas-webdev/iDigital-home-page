@@ -356,76 +356,6 @@
                     word-spacing: 3px;
                 }
 
-                .cta-buttons {
-                    display: flex;
-                    gap: 14px;
-                    padding: 36px 0 46px;
-
-                    .cta-btn {
-                        &:nth-child(1) {
-                            background-color: white;
-
-                            span {
-                                color: var(--black);
-                            }
-
-                            .arrow-svg {
-                                background-color: black;
-
-                                svg {
-                                    path {
-                                        fill: white;
-                                    }
-                                }
-                            }
-
-                            &:hover {
-                                background-color: var(--black);
-                                border: 1px solid white;
-
-                                span {
-                                    color: var(--white);
-                                }
-
-                                .arrow-svg {
-                                    background-color: var(--white);
-
-                                    svg {
-                                        path {
-                                            fill: var(--black);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            max-width: max-content;
-                            gap: 18px;
-                            background-color: black;
-
-                            &:hover {
-                                background-color: white;
-                                border: 1px solid black;
-
-                                span {
-                                    color: var(--black);
-                                }
-
-                                .arrow-svg {
-                                    background-color: black;
-
-                                    svg {
-                                        path {
-                                            fill: white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
                 .social-proof-wrapper {
                     display: flex;
                     align-items: center;
@@ -673,8 +603,8 @@
             }
 
             .repair-cards-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                /* display: grid;
+                grid-template-columns: repeat(3, 1fr); */
                 gap: 22px;
                 width: 100%;
 
@@ -759,4 +689,83 @@
 }
 
 /* END :: Repair Section 
+************************************** */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* START :: Services Section 
+************************************** */
+.services-section {
+    padding: 140px 0;
+
+    .container {
+        .services-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .services-image {
+                max-width: 600px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .services-content {
+                display: flex;
+                flex-direction: column;
+                max-width: 600px;
+                justify-content: center;
+
+                .title-label {
+                    margin: 0;
+                }
+
+                .section-title {
+                    text-align: start;
+                    padding: 22px 0 13px;
+                }
+
+                .service-detail-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+
+                    .services-detail {
+                        font-size: 1.4vw;
+                        font-weight: 400;
+                        line-height: 2.2vw;
+                        color: var(--black);
+                        font-family: var(--ff-satoshi);
+                    }
+                }
+
+                .cta-buttons {
+                    padding-top: 38px;
+
+                    .cta-btn {
+                        &.blue {}
+
+                        &.black {}
+
+                        span {}
+
+                        .arrow-svg {
+                            svg {
+                                path {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END :: Services Section 
 ************************************** */
