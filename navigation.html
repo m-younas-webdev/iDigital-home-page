@@ -2,88 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seamless Logo Slider</title>
+    <title>Infinite Logo Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background: #f8f9fa;
-      }
-
-      /* The container that hides the overflow */
-      .logos-slider {
-        overflow: hidden;
-        padding: 30px 0;
-        background: white;
-        white-space: nowrap;
-        position: relative;
+      .swiper {
         width: 100%;
+        padding: 50px 0;
       }
 
-      /* The container that actually moves */
-      .logos-slide {
-        display: inline-block;
-        animation: 25s slide infinite linear;
+      .swiper-slide {
+        width: 120px !important; /* Fixed width 120px */
+        margin-right: 20px; /* 20px gap */
       }
 
-      .logos-slide img {
-        height: 50px;
-        margin: 0 40px;
-        vertical-align: middle;
+      .swiper-slide img {
+        width: 120px;
+        height: auto;
+        display: block;
       }
 
-      /* The animation for the smooth movement */
-      @keyframes slide {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-100%);
-        }
-      }
-
-      /* Pause on hover (Optional) */
-      .logos-slider:hover .logos-slide {
-        animation-play-state: paused;
+      /* Smooth continuous transition */
+      .swiper-wrapper {
+        transition-timing-function: linear !important;
       }
     </style>
   </head>
   <body>
-    <div class="logos-slider">
-      <div class="logos-slide" id="slider">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-          alt="Google" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-          alt="IBM" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-          alt="Amazon" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-          alt="Microsoft" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-          alt="Netflix" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
-          alt="Salesforce" />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
-          alt="Meta" />
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-1.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-2.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-4.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-3.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-5.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-6.png" alt="Logo" /></a
+        ></div>
+        <div class="swiper-slide"
+          ><a href="https://google.com"
+            ><img src="assets/media/company-logo-5.png" alt="Logo" /></a
+        ></div>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-      // This script clones the slider once to ensure a seamless "no-blink" loop
-      var copy = document.querySelector(".logos-slide").cloneNode(true);
-      document.querySelector(".logos-slider").appendChild(copy);
+      var swiper = new Swiper(".mySwiper", {
+        loop: true, // Infinite loop
+        spaceBetween: 20, // 20px gap
+        slidesPerView: "auto", // Based on 120px width
+        speed: 3000, // Movement speed
+        autoplay: {
+          delay: 0, // No pause
+          disableOnInteraction: false,
+        },
+        allowTouchMove: false, // Pure auto-scroll
+      });
     </script>
   </body>
 </html>

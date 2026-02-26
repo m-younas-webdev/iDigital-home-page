@@ -470,17 +470,54 @@
 .partners-section {
     margin: 118px 0 140px;
 
-    .partners-container {
-        .section-title {
-            padding: 22px 0 36px;
-        }
+    .container {
+        .partners-container {
+            .section-title {
+                padding: 22px 0 36px;
+            }
 
-        .partners-logos-containers {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
+            .partners-logos-containers {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
 
-            .partners-logos-container {
+                .swiper {
+                    width: 100%;
+                    padding: 50px 0;
+                }
+
+                .swiper-slide {
+                    margin-right: 20px;
+                    /* 20px gap */
+                    width: 220px;
+                    height: 110px;
+                    background-color: #4C4C4C0D;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 13px;
+
+                    .logo-image {
+                        width: 132px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .swiper-slide .logo-image img {
+                    width: 120px;
+                    height: auto;
+                    display: block;
+                }
+
+                /* Smooth continuous transition */
+                .swiper-wrapper {
+                    transition-timing-function: linear !important;
+                }
+
+                /* .partners-logos-container {
                 display: flex;
                 overflow: hidden;
                 width: 100%;
@@ -492,27 +529,10 @@
                     gap: 17px;
                     animation: slide-primary 25s infinite linear;
 
-                    .partner-logo-item {
-                        width: 220px;
-                        height: 110px;
-                        background-color: #4C4C4C0D;
-                        display: grid;
-                        place-items: center;
-                        border-radius: 13px;
-
-                        .logo-image {
-                            width: 132px;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
+          
                 }
-            }
-
-            & :nth-child(2).partners-logos-container {
+            } */
+                /* & :nth-child(2).partners-logos-container {
                 display: flex;
                 overflow: hidden;
                 width: 100%;
@@ -541,13 +561,14 @@
                         }
                     }
                 }
+            } */
             }
         }
     }
 }
 
 /* Logos Primary Row  */
-@keyframes slide-primary {
+/* @keyframes slide-primary {
     from {
         transform: translateX(0);
     }
@@ -555,10 +576,9 @@
     to {
         transform: translateX(-100%);
     }
-}
-
+} */
 /* Logos Secondary Row  */
-@keyframes slide-secondary {
+/* @keyframes slide-secondary {
     from {
         transform: translateX(-100%);
     }
@@ -566,8 +586,7 @@
     to {
         transform: translateX(0);
     }
-}
-
+} */
 /* END :: Partner Section 
 ************************************** */
 /* #############################  */
@@ -768,4 +787,49 @@
 }
 
 /* END :: Services Section 
+************************************** */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* START :: Trust Section 
+************************************** */
+.trust-section {
+    .container {
+        .trust-container {
+            .title-label {}
+
+            .section-title {}
+
+            .section-desc {}
+
+            .company-trust-cards-wrapper {
+                .trust-card {
+                    h4 {}
+
+                    .trust-card-desc {}
+
+                    .cta-btn {
+                        &.blue {}
+
+                        span {}
+
+                        .arrow-svg {
+                            svg {
+                                path {}
+                            }
+                        }
+                    }
+
+                    .trust-card-image {
+                        img {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END :: Trust Section 
 ************************************** */
