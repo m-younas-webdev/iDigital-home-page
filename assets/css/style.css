@@ -564,13 +564,13 @@
                     background-color: white;
 
                     .card-image-wrapper {
-                        background: red;
                         aspect-ratio: 370/300;
                         background-image: url(../media/repair-card-image-1.png);
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
                         position: relative;
+                        margin-top: 10px;
 
                         .repair-card-header {
                             position: absolute;
