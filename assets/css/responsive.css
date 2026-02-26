@@ -338,9 +338,9 @@
       }
 
       .partners-logos-containers {
-        .partners-logos-container {
-          .partner-logo-list {
-            .partner-logo-item {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
               height: 65px;
               width: 130px;
 
@@ -733,13 +733,13 @@
       .partners-logos-containers {
         gap: 16px;
 
-        .partners-logos-container {
+        .swiper {
           gap: 13px;
 
-          .partner-logo-list {
+          .swiper-wrapper {
             gap: 13px;
 
-            .partner-logo-item {
+            .swiper-slide {
               height: 42px;
               width: 85px;
 
