@@ -558,18 +558,19 @@
                 gap: 22px;
                 width: 100%;
 
-                .repair-card {
-                    aspect-ratio: 400/470;
-                    background: var(--white);
+                .repair-card-test {
+                    padding: 17px 15px 0 15px;
                     border-radius: 22px;
-                    padding: 17px 15px 23px 15px;
-                    border-radius: 22px;
+                    background-color: white;
 
                     .card-image-wrapper {
-                        background-color: #F7F7F7;
+                        aspect-ratio: 370/300;
+                        /* width: 385px; */
+                        background-image: url(../media/repair-card-image-1.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
                         position: relative;
-                        padding: 13px;
-                        bottom: 0;
 
                         .repair-card-header {
                             position: absolute;
@@ -578,6 +579,7 @@
                             right: 21px;
                             left: 13px;
                             justify-content: space-between;
+                            z-index: 2;
 
                             .card-label {
                                 font-size: 10px;
@@ -589,53 +591,97 @@
                                 font-family: var(--ff-satoshi);
                             }
                         }
-
-                        .repair-card-image {
-                            img {
-                                margin-top: 6px;
-                                aspect-ratio: 100 / 70;
-                            }
-                        }
-
-                        >svg {
-                            width: 100%;
-                            margin: 0 auto;
-                        }
                     }
+                }
+            }
+        }
 
-                    .card-title {
-                        font-size: 32px;
-                        line-height: 42px;
-                        font-weight: 500;
-                        color: #0A1519;
-                        font-family: var(--ff-clash);
-                        padding: 32px 0 18px;
-                        margin: 0 auto;
-                        text-align: center;
+        .repair-card {
+            aspect-ratio: 400/470;
+            background: var(--white);
+            border-radius: 22px;
+            padding: 17px 15px 23px 15px;
+            border-radius: 22px;
+
+            .card-image-wrapper {
+                background-color: #F7F7F7;
+                position: relative;
+                padding: 13px;
+                bottom: 0;
+                aspect-ratio: 360/255;
+                width: 360px;
+
+                .repair-card-header {
+                    position: absolute;
+                    display: flex;
+                    top: 13px;
+                    right: 21px;
+                    left: 13px;
+                    justify-content: space-between;
+                    z-index: 1;
+
+                    .card-label {
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: var(--black);
+                        padding: 4px 8px;
+                        background-color: #FFC633;
+                        border-radius: 92px;
+                        font-family: var(--ff-satoshi);
                     }
+                }
 
-                    .cta-btn {
-                        margin: 0 auto;
+                .repair-card-image {
+                    position: absolute;
+                    inset: 0;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
 
-                        span {
-                            font-size: 14px;
-                            line-height: 18px;
-                            font-weight: 500;
-                        }
+                    img {
+                        margin-top: 8px;
+                    }
+                }
 
-                        .arrow-svg {
-                            padding: 8px;
+                >svg {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
 
-                            svg {
-                                width: 13px;
-                                height: 14px;
-                            }
-                        }
+            .card-title {
+                font-size: 32px;
+                line-height: 42px;
+                font-weight: 500;
+                color: #0A1519;
+                font-family: var(--ff-clash);
+                padding: 32px 0 18px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .cta-btn {
+                margin: 0 auto;
+
+                span {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+
+                .arrow-svg {
+                    padding: 8px;
+
+                    svg {
+                        width: 13px;
+                        height: 14px;
                     }
                 }
             }
         }
     }
+}
+}
 }
 
 /* END :: Repair Section 
