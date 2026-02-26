@@ -320,6 +320,59 @@
 
   /* END :: Services Section 
 ********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Trust  Section 
+********************************** */
+  .trust-section {
+    .container {
+      .trust-container {
+        .title-label {}
+
+        .section-title {}
+
+        .section-desc {}
+
+        .company-trust-cards-wrapper {
+          .trust-card {
+            .trust-card-content {
+              h4 {
+                font-size: 24px;
+                line-height: 36px;
+              }
+
+              .trust-card-desc {
+                font-size: 16px;
+                line-height: 24px;
+              }
+
+              .cta-btn {
+                &.blue {}
+
+                span {}
+
+                .arrow-svg {
+                  svg {
+                    path {}
+                  }
+                }
+              }
+            }
+
+            .trust-card-image {
+              img {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Trust  Section 
+********************************** */
 }
 
 /* ###########################  */
@@ -370,6 +423,69 @@
       }
     }
   }
+
+  /* END :: Partner Section 
+********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Trust Section 
+********************************** */
+  .trust-section {
+    .container {
+      .trust-container {
+        padding: 40px 20px;
+
+        .title-label {}
+
+        .section-title {
+          width: 80%;
+          padding: 10px 0 8px;
+        }
+
+        .section-desc {
+          width: 90%;
+          padding-bottom: 20px;
+        }
+
+        .company-trust-cards-wrapper {
+          flex-direction: column;
+          gap: 40px;
+
+          .trust-card {
+            width: 100%;
+
+            .trust-card-content {
+              h4 {}
+
+              .trust-card-desc {}
+
+              .cta-btn {
+                &.blue {}
+
+                span {}
+
+                .arrow-svg {
+                  svg {
+                    path {}
+                  }
+                }
+              }
+            }
+
+            .trust-card-image {
+              img {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Trust Section 
+********************************** */
 }
 
 @media(max-width:576px) {
@@ -727,33 +843,20 @@
   .partners-section {
     margin: 50px 0 70px;
 
-    .partners-container {
-      .partner-container-head {}
+    .container {
+      .partners-container {
+        .partner-container-head {}
 
-      .partners-logos-containers {
-        gap: 16px;
+        .partners-logos-containers {
+          gap: 16px;
 
-        .swiper {
-          gap: 13px;
-
-          .swiper-wrapper {
+          .swiper {
             gap: 13px;
 
-            .swiper-slide {
-              height: 42px;
-              width: 85px;
+            .swiper-wrapper {
+              gap: 13px;
 
-              .logo-image {
-                width: 50px;
-
-                img {}
-              }
-            }
-          }
-
-          &:nth-child(2) {
-            .partner-logo-list {
-              .partner-logo-item {
+              .swiper-slide {
                 height: 42px;
                 width: 85px;
 
@@ -761,6 +864,21 @@
                   width: 50px;
 
                   img {}
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .partner-logo-list {
+                .partner-logo-item {
+                  height: 42px;
+                  width: 85px;
+
+                  .logo-image {
+                    width: 50px;
+
+                    img {}
+                  }
                 }
               }
             }
@@ -824,4 +942,59 @@
 
   /* START :: Services Section  
   **********************************  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Trust Section 
+********************************** */
+  .trust-section {
+    .container {
+      .trust-container {
+        padding: 20px 10px;
+
+        .title-label {}
+
+        .section-title {}
+
+        .section-desc {}
+
+        .company-trust-cards-wrapper {
+          .trust-card {
+            .trust-card-content {
+              h4 {
+                font-size: 20px;
+              }
+
+              .trust-card-desc {
+                font-size: 16px;
+              }
+
+              .cta-btn {
+                margin: 0 auto;
+
+                &.blue {}
+
+                span {}
+
+                .arrow-svg {
+                  svg {
+                    path {}
+                  }
+                }
+              }
+            }
+
+            .trust-card-image {
+              img {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Trust Section 
+********************************** */
 }

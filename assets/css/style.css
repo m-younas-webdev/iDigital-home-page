@@ -553,46 +553,10 @@
             }
 
             .repair-cards-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                /* display: grid;
+                grid-template-columns: repeat(3, 1fr); */
                 gap: 22px;
                 width: 100%;
-
-                .repair-card-test {
-                    padding: 17px 15px 0 15px;
-                    border-radius: 22px;
-                    background-color: white;
-
-                    .card-image-wrapper {
-                        aspect-ratio: 370/300;
-                        background-image: url(../media/repair-card-image-1.png);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: cover;
-                        position: relative;
-                        margin-top: 10px;
-
-                        .repair-card-header {
-                            position: absolute;
-                            display: flex;
-                            top: 13px;
-                            right: 21px;
-                            left: 13px;
-                            justify-content: space-between;
-                            z-index: 2;
-
-                            .card-label {
-                                font-size: 10px;
-                                line-height: 12px;
-                                color: var(--black);
-                                padding: 4px 8px;
-                                background-color: #FFC633;
-                                border-radius: 92px;
-                                font-family: var(--ff-satoshi);
-                            }
-                        }
-                    }
-                }
             }
         }
 
@@ -604,13 +568,12 @@
             border-radius: 22px;
 
             .card-image-wrapper {
-                background-color: #F7F7F7;
                 position: relative;
                 padding: 13px;
                 bottom: 0;
                 aspect-ratio: 360/255;
-                width: 360px;
 
+                /* width: 360px; */
                 .repair-card-header {
                     position: absolute;
                     display: flex;
@@ -638,9 +601,7 @@
                     left: 0;
                     bottom: 0;
 
-                    img {
-                        margin-top: 8px;
-                    }
+                    img {}
                 }
 
                 >svg {
@@ -773,32 +734,82 @@
 .trust-section {
     .container {
         .trust-container {
+            background-color: #F3F7FD;
+            border-radius: 40px;
+            padding: 66px 56px;
+
             .title-label {}
 
-            .section-title {}
+            .section-title {
+                max-width: 700px;
+                padding: 22px 0 14px;
+                margin: 0 auto;
+            }
 
-            .section-desc {}
+            .section-desc {
+                padding-bottom: 40px;
+                max-width: 650px;
+            }
 
             .company-trust-cards-wrapper {
+                width: 100%;
+                gap: 18px;
+                display: flex;
+
                 .trust-card {
-                    h4 {}
+                    width: 50%;
+                    background-color: var(--white);
+                    border-radius: 22px;
 
-                    .trust-card-desc {}
+                    .trust-card-content {
+                        padding: 17px 18px 0 23px;
 
-                    .cta-btn {
-                        &.blue {}
+                        h4 {
+                            font-size: 35px;
+                            line-height: 44px;
+                            font-weight: 500;
+                            font-family: var(--ff-clash);
+                        }
 
-                        span {}
+                        .trust-card-desc {
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: var(--ff-satoshi);
+                            line-height: 27px;
+                            padding: 8px 0 20px;
+                        }
 
-                        .arrow-svg {
-                            svg {
-                                path {}
+                        .cta-btn {
+                            max-width: 164px;
+                            width: 100%;
+
+                            &.blue {}
+
+                            span {
+                                font-size: 15px;
+                                line-height: 20px;
+                            }
+
+                            .arrow-svg {
+                                padding: 3px 8px;
+
+                                svg {
+                                    width: 15px;
+                                    aspect-ratio: 1;
+
+                                    path {}
+                                }
                             }
                         }
                     }
 
                     .trust-card-image {
-                        img {}
+                        padding-top: 32px;
+
+                        img {
+                            border-radius: 22px;
+                            aspect-ratio: 603/343;
+                        }
                     }
                 }
             }
