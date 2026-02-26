@@ -564,8 +564,8 @@
                     background-color: white;
 
                     .card-image-wrapper {
+                        background: red;
                         aspect-ratio: 370/300;
-                        /* width: 385px; */
                         background-image: url(../media/repair-card-image-1.png);
                         background-repeat: no-repeat;
                         background-position: center;
@@ -680,8 +680,6 @@
             }
         }
     }
-}
-}
 }
 
 /* END :: Repair Section 
