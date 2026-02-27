@@ -120,7 +120,7 @@
 /* #########################  */
 /* START :: Hero Section 
 ************************************** */
-/* .digital-hero-section {
+.digital-hero-section {
     .container {
         .digital-hero-container {
             border-radius: 40px;
@@ -281,8 +281,9 @@
             }
         }
     }
-} */
-.digital-hero-section {
+}
+
+/* .digital-hero-section {
     .container {
         .digital-hero-container {
             border-radius: 40px;
@@ -404,16 +405,6 @@
                                 margin-left: -13px;
                             }
                         }
-
-                        /* img {
-                         
-
-                  
-
-                            &:nth-child(3) {
-                       
-                            }
-                        } */
                     }
 
                     .social-users-trust-stack {
@@ -457,8 +448,7 @@
             }
         }
     }
-}
-
+} */
 /* END :: Hero Section 
 ************************************** */
 /* ############################### */
@@ -485,9 +475,9 @@
                     width: 100%;
 
                     /* Smooth continuous transition */
-                    >.swiper-wrapper {
+                    .swiper-wrapper {
+                        transition-timing-function: linear !important;
 
-                        /* transition-timing-function: linear !important; */
                         .logo-item.swiper-slide {
                             width: 220px;
                             height: 110px;
@@ -821,7 +811,7 @@
 /* START :: Testimonial Section 
 ************************************** */
 .testimonial-section {
-    padding: 140px 0;
+    padding: 90px 0;
 
     .container {
         .testimonial-container {
@@ -852,19 +842,17 @@
                 }
             }
 
-            >.swiper {
+            .testimnial-cards-main-container.swiper {
                 width: 100%;
                 height: 100%;
 
-                >.testimonial-cards-container {
-                    display: flex;
+                .testimonial-cards-container.swiper-wrapper {
                     gap: 18px;
                     align-items: center;
 
-                    >.swiper-slide {
+                    .testimonial-user-card.swiper-slide {
                         font-size: 18px;
-                        background: #444;
-                        display: flex;
+                        background: #F3F7FD;
                     }
 
                     .testimonial-user-card {
@@ -936,6 +924,74 @@
                                     font-family: var(--ff-satoshi);
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END :: Testimonial Section 
+************************************** */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* START :: Contact Section
+************************************** */
+.contact-section {
+    .container {
+        .contact-container {
+            background-color: var(--blue);
+            display: flex;
+            gap: 55px;
+            overflow: hidden;
+            border-radius: 40px;
+            padding-right: 95px;
+
+            .contact-image {
+                max-width: 770px;
+
+                img {
+                    display: flex;
+                    object-fit: cover;
+                    border-radius: 40px;
+                }
+            }
+
+            .contact-container-content {
+                padding: 70px 0;
+                position: relative;
+
+                .title-label {
+                    background-color: white;
+                    text-align: start;
+                    margin: 0;
+                }
+
+                .section-title {
+                    padding: 22px 0 14px;
+                    text-align: start;
+                    color: var(--white);
+                    font-weight: 400;
+                }
+
+                .contact-desc {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: var(--white);
+                    font-family: var(--ff-satoshi);
+                    padding-bottom: 34px;
+                }
+
+                .cta-btn.white {
+                    span {}
+
+                    .arrow-svg {
+                        svg {
+                            path {}
                         }
                     }
                 }

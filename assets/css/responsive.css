@@ -357,7 +357,9 @@
 
           .title-label {}
 
-          .section-title {}
+          .section-title {
+            text-align: center;
+          }
 
           .service-detail-wrapper {
             .services-detail {
@@ -502,6 +504,54 @@
       }
     }
   }
+
+  /* START :: Contact Section 
+********************************** */
+  .contact-section {
+    .container {
+      .contact-container {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        gap: 0;
+
+        .contact-image {
+          margin: 0 auto;
+          padding: 30px 30px 0 30px;
+
+          img {}
+        }
+
+        .contact-container-content {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .title-label {}
+
+          .section-title {
+            text-align: center;
+          }
+
+          .contact-desc {
+            text-align: center;
+          }
+
+          .cta-btn.white {
+            span {}
+
+            .arrow-svg {
+              svg {
+                path {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ###########################  */
@@ -514,29 +564,16 @@
   .partners-section {
     margin: 73px 0 80px;
 
-    .partners-container {
-      .partner-container-head {
-        padding: 22px 0 32px;
-      }
+    .container {
+      .partners-container {
+        .partner-container-head {
+          padding: 22px 0 32px;
+        }
 
-      .partners-logos-containers {
-        .swiper {
-          .swiper-wrapper {
-            .logo-item.swiper-slide {
-              height: 65px;
-              width: 130px;
-
-              .logo-image {
-                width: 75px;
-
-                img {}
-              }
-            }
-          }
-
-          &:nth-child(2) {
-            .partner-logo-list {
-              .partner-logo-item {
+        .partners-logos-containers {
+          .partner-logo-container.swiper {
+            .swiper-wrapper {
+              .logo-item.swiper-slide {
                 height: 65px;
                 width: 130px;
 
@@ -544,6 +581,21 @@
                   width: 75px;
 
                   img {}
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .partner-logo-list {
+                .partner-logo-item {
+                  height: 65px;
+                  width: 130px;
+
+                  .logo-image {
+                    width: 75px;
+
+                    img {}
+                  }
                 }
               }
             }
@@ -886,6 +938,8 @@
   /* END :: Services Section 
 ********************************** */
   .testimonial-section {
+    padding: 40px 0;
+
     .container {
       .testimonial-container {
         .testimonial-header-banner {
@@ -937,6 +991,40 @@
 
                   .user-designation {}
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    .container {
+      .contact-container {
+        border-radius: 22px;
+
+        .contact-image {
+          padding: 20px 20px 0 20px;
+
+          img {
+            border-radius: 22px;
+          }
+        }
+
+        .contact-container-content {
+          .title-label {}
+
+          .section-title {}
+
+          .contact-desc {}
+
+          .cta-btn.white {
+            span {}
+
+            .arrow-svg {
+              svg {
+                path {}
               }
             }
           }
@@ -1089,22 +1177,26 @@
   /* END :: Hero Section 
 ********************************** */
   .partners-section {
-    margin: 50px 0 70px;
+    margin: 50px 0;
 
     .container {
       .partners-container {
+        .section-title {
+          padding: 12px 0 20px;
+        }
+
         .partner-container-head {}
 
         .partners-logos-containers {
           gap: 16px;
 
-          .swiper {
+          .partner-logo-container.swiper {
             gap: 13px;
 
             .swiper-wrapper {
               gap: 13px;
 
-              .swiper-slide {
+              .logo-item.swiper-slide {
                 height: 42px;
                 width: 85px;
 
@@ -1201,6 +1293,7 @@
     .container {
       .trust-container {
         padding: 20px 10px;
+        border-radius: 22px;
 
         .title-label {}
 
@@ -1245,4 +1338,58 @@
 
   /* END :: Trust Section 
 ********************************** */
+  /* START :: Trust  Section 
+********************************** */
+  .contact-section {
+    .container {
+      .contact-container {
+        max-width: 100%;
+        border-radius: 16px;
+
+        .contact-image {
+          padding: 14px 14px 0 14px;
+
+          img {
+            border-radius: 16px;
+          }
+        }
+
+        .contact-container-content {
+          .title-label {}
+
+          .section-title {
+            padding: 12px 0 8px;
+            font-size: 24px;
+            line-height: 30px;
+          }
+
+          .contact-desc {
+            font-size: 16px;
+            line-height: 22px;
+            padding-bottom: 23px;
+          }
+
+          .cta-btn.white {
+            padding: 2px;
+
+            span {
+              font-size: 16px;
+              line-height: 22px;
+            }
+
+            .arrow-svg {
+              padding: 6px;
+
+              svg {
+                width: 20px;
+                height: 20px;
+
+                path {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

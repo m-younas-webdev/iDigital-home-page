@@ -2,82 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Infinite Logo Slider</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concave Curve Divider</title>
     <style>
-      .swiper {
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Top Container */
+      .top-container {
+        background-color: #3498db;
+        color: white;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      /* Concave Divider using SVG */
+      .divider {
+        position: absolute;
+        bottom: 0;
         width: 100%;
-        padding: 50px 0;
+        line-height: 0;
       }
 
-      .swiper-slide {
-        width: 120px !important; /* Fixed width 120px */
-        margin-right: 20px; /* 20px gap */
-      }
-
-      .swiper-slide img {
-        width: 120px;
-        height: auto;
+      .divider svg {
         display: block;
+        width: 100%;
+        height: 80px; /* Adjust height for curve depth */
       }
 
-      /* Smooth continuous transition */
-      .swiper-wrapper {
-        transition-timing-function: linear !important;
+      /* Bottom Container */
+      .bottom-container {
+        background-color: #2ecc71;
+        color: white;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 3rem;
       }
     </style>
   </head>
   <body>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-1.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-2.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-4.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-3.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-5.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-6.png" alt="Logo" /></a
-        ></div>
-        <div class="swiper-slide"
-          ><a href="https://google.com"
-            ><img src="assets/media/company-logo-5.png" alt="Logo" /></a
-        ></div>
+    <div class="top-container">
+      <h1>Top Container</h1>
+
+      <div class="divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#2ecc71" d="M0,224L1440,32L1440,320L0,320Z"></path>
+          <path
+            fill="#2ecc71"
+            d="M0,320L1440,320L1440,0C1440,0,1118,128,720,128C322,128,0,0,0,0L0,320Z"></path>
+        </svg>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true, // Infinite loop
-        spaceBetween: 20, // 20px gap
-        slidesPerView: "auto", // Based on 120px width
-        speed: 3000, // Movement speed
-        autoplay: {
-          delay: 0, // No pause
-          disableOnInteraction: false,
-        },
-        allowTouchMove: false, // Pure auto-scroll
-      });
-    </script>
+    <div class="bottom-container">
+      <h1>Bottom Container</h1>
+    </div>
   </body>
 </html>
