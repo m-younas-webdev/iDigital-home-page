@@ -598,26 +598,26 @@
     .container {
         .repair-container {
             padding: 55px;
-            background-color: black;
+            background-color: #F3F7FD;
             border-radius: 40px;
 
             .title-label {
-                color: var(--white);
-                border-color: var(--white);
+                color: var(--black);
+                border-color: var(--black);
 
                 &::before {
-                    background: white;
+                    background: var(--black);
                 }
             }
 
             .section-title {
                 padding: 22px 0 12px;
-                color: var(--white);
+                color: var(--black);
             }
 
             .section-desc {
                 padding-bottom: 50px;
-                color: var(--white);
+                color: var(--black);
             }
 
             .repair-cards-container {
