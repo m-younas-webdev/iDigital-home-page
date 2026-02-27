@@ -1,3 +1,69 @@
+@media(max-width:1150px) {
+  .testimonial-section {
+    .container {
+      .testimonial-container {
+        .testimonial-header-banner {
+          .header-banner-title-wrapper {
+            .title-label {}
+
+            .section-title {
+              font-size: 40px;
+              line-height: 45px;
+              max-width: 400px;
+            }
+          }
+
+          .testimonial-header-desc {
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 400px;
+          }
+        }
+
+        .swiper {
+          .testimonial-cards-container {
+            .swiper-slide {}
+
+            .testimonial-user-card {
+              .quote-icon {
+                svg {
+                  path {}
+                }
+              }
+
+              .user-comment {
+                font-size: 16px;
+                line-height: 22px;
+              }
+
+              .testimonial-ranking-badge {
+                svg {
+                  width: 80px;
+                  aspect-ratio: 1;
+
+                  path {}
+                }
+              }
+
+              .testi-profile-wrapper {
+                .profile-avatar {
+                  img {}
+                }
+
+                .profile-info {
+                  .profile-name {}
+
+                  .user-designation {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media(max-width:992px) {
   .digital-header-section {
     .container {

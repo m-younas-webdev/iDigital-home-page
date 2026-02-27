@@ -153,6 +153,20 @@
                 }
             }
         }
+
+        span {
+            color: var(--black);
+        }
+
+        .arrow-svg {
+            background-color: var(--black);
+
+            svg {
+                path {
+                    fill: var(--white);
+                }
+            }
+        }
     }
 }
 
