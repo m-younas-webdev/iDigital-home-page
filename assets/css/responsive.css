@@ -26,7 +26,12 @@
 
             .testimonial-user-card {
               .quote-icon {
+                padding: 16px;
+
                 svg {
+                  width: 26px;
+                  height: 21px;
+
                   path {}
                 }
               }
@@ -439,6 +444,64 @@
 
   /* END :: Trust  Section 
 ********************************** */
+  .testimonial-section {
+    .container {
+      .testimonial-container {
+        .testimonial-header-banner {
+          flex-direction: column;
+          gap: 10px;
+
+          .header-banner-title-wrapper {
+            .title-label {
+              margin: 0 auto;
+            }
+
+            .section-title {
+              text-align: center;
+            }
+          }
+
+          .testimonial-header-desc {}
+        }
+
+        .swiper {
+          .testimonial-cards-container {
+            .swiper-slide {}
+
+            .testimonial-user-card {
+              gap: 10px;
+
+              .quote-icon {
+                svg {
+                  path {}
+                }
+              }
+
+              .user-comment {}
+
+              .testimonial-ranking-badge {
+                svg {
+                  path {}
+                }
+              }
+
+              .testi-profile-wrapper {
+                .profile-avatar {
+                  img {}
+                }
+
+                .profile-info {
+                  .profile-name {}
+
+                  .user-designation {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ###########################  */
@@ -459,7 +522,7 @@
       .partners-logos-containers {
         .swiper {
           .swiper-wrapper {
-            .swiper-slide {
+            .logo-item.swiper-slide {
               height: 65px;
               width: 130px;
 
@@ -552,6 +615,66 @@
 
   /* END :: Trust Section 
 ********************************** */
+  .testimonial-section {
+    padding: 60px 0;
+
+    .container {
+      .testimonial-container {
+        .testimonial-header-banner {
+          flex-direction: column;
+          gap: 10px;
+
+          .header-banner-title-wrapper {
+            .title-label {
+              margin: 0 auto;
+            }
+
+            .section-title {
+              text-align: center;
+            }
+          }
+
+          .testimonial-header-desc {}
+        }
+
+        .swiper {
+          .testimonial-cards-container {
+            .swiper-slide {}
+
+            .testimonial-user-card {
+              gap: 10px;
+
+              .quote-icon {
+                svg {
+                  path {}
+                }
+              }
+
+              .user-comment {}
+
+              .testimonial-ranking-badge {
+                svg {
+                  path {}
+                }
+              }
+
+              .testi-profile-wrapper {
+                .profile-avatar {
+                  img {}
+                }
+
+                .profile-info {
+                  .profile-name {}
+
+                  .user-designation {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media(max-width:576px) {
@@ -762,6 +885,65 @@
 
   /* END :: Services Section 
 ********************************** */
+  .testimonial-section {
+    .container {
+      .testimonial-container {
+        .testimonial-header-banner {
+          padding-bottom: 26px;
+
+          .header-banner-title-wrapper {
+            .title-label {}
+
+            .section-title {
+              font-size: 28px;
+              line-height: 34px;
+              max-width: 70%;
+              margin: 0 auto;
+            }
+          }
+
+          .testimonial-header-desc {
+            max-width: 80%;
+            text-align: center;
+          }
+        }
+
+        .swiper {
+          .testimonial-cards-container {
+            .swiper-slide {}
+
+            .testimonial-user-card {
+              .quote-icon {
+                svg {
+                  path {}
+                }
+              }
+
+              .user-comment {}
+
+              .testimonial-ranking-badge {
+                svg {
+                  path {}
+                }
+              }
+
+              .testi-profile-wrapper {
+                .profile-avatar {
+                  img {}
+                }
+
+                .profile-info {
+                  .profile-name {}
+
+                  .user-designation {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media(max-width:420px) {

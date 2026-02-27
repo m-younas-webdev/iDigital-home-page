@@ -511,7 +511,7 @@
 
             <!-- Loop List No. 2  -->
             <!-- Loop List No. 1  -->
-            <div class="swiper mySwiper" dir="rtl">
+            <div class="partner-logo-container swiper mySwiper" dir="rtl">
               <!-- List No. 1  -->
               <div class="swiper-wrapper">
                 <li class="logo-item swiper-slide">
@@ -521,6 +521,7 @@
                       alt="Partner Company Logo Image " />
                   </div>
                 </li>
+
                 <li class="logo-item swiper-slide">
                   <div class="logo-image">
                     <img
@@ -574,7 +575,7 @@
                   </div>
                 </li>
 
-                <li class="swiper-slide">
+                <li class="logo-item swiper-slide">
                   <div class="logo-image">
                     <img
                       src="assets/media/company-logo-1.png"
@@ -1516,13 +1517,14 @@
       var swiper = new Swiper(".mySwiper", {
         loop: true, // Infinite loop
         spaceBetween: 20, // 20px gap
-        slidesPerView: "auto", // Based on 120px width
+        slidesPerView: "auto", // Based on 120px
         speed: 3000, // Movement speed
         autoplay: {
           delay: 0, // No pause
           disableOnInteraction: false,
         },
-        allowTouchMove: false, // Pure auto-scroll
+
+        /* Add these two lines */
       });
     </script>
 
@@ -1536,6 +1538,19 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 576px
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 992px
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
         },
       });
     </script>
