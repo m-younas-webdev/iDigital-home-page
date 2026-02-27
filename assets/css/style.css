@@ -120,16 +120,18 @@
 /* #########################  */
 /* START :: Hero Section 
 ************************************** */
-.digital-hero-section {
+/* .digital-hero-section {
     .container {
         .digital-hero-container {
             border-radius: 40px;
-            background-image: url(../media/digital-hero-bg-image.png);
+            background-image: url(../media/hero-section-v1-bg-image.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
 
             .digital-hero-container-content {
+                padding: 94px 0 92px 80px;
+
                 .service-status-label {
                     display: flex;
                     gap: 9px;
@@ -138,6 +140,7 @@
                     border: 1px solid #E2E2E2;
                     max-width: max-content;
                     border-radius: 50px;
+                    background-color: var(--white);
 
                     .statu-label-icon {
                         padding: 6px;
@@ -184,6 +187,31 @@
                     padding: 36px 0 46px;
 
                     .cta-btn {
+                        &:nth-child(1) {
+                            background-color: var(--blue);
+
+                            &:hover {
+                                background: white;
+                                border: 1px solid var(--blue);
+
+                                span {
+                                    color: var(--blue);
+                                }
+
+                                .arrow-svg {
+                                    background-color: var(--blue);
+
+                                    svg {
+                                        path {
+                                            fill: var(--white);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .cta-btn {
                         &.black {
                             background-color: black;
 
@@ -210,28 +238,44 @@
 
                 .social-proof-wrapper {
                     display: flex;
-                    gap: 96px;
                     align-items: center;
+                    gap: 11px;
 
                     .social-users-images {
-                        width: 55px;
-                        height: 55px;
                         display: flex;
+                        align-items: center;
 
-                        img {
-                            border-radius: 50%;
-                            border: 2px solid var(--white);
+                        .user-image {
+                            img {
+                                width: 55px;
+                                height: 55px;
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                display: flex;
+                            }
+                        }
 
-                            &:nth-child(1) {
+                        & :nth-child(1).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--blue);
                             }
+                        }
 
-                            &:nth-child(2) {
+                        & :nth-child(2).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--black);
                                 margin-left: -13px;
                             }
+                        }
 
-                            &:nth-child(3) {
+                        & :nth-child(3).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
                                 background-color: var(--blue);
                                 margin-left: -13px;
                             }
@@ -244,6 +288,7 @@
                             line-height: 30px;
                             font-weight: 700;
                             font-family: var(--ff-satoshi);
+                            color: var(--black);
                         }
 
                         .social-users-label {
@@ -281,9 +326,8 @@
             }
         }
     }
-}
-
-/* .digital-hero-section {
+} */
+.digital-hero-section {
     .container {
         .digital-hero-container {
             border-radius: 40px;
@@ -359,6 +403,45 @@
 
                 .cta-buttons {
                     padding: 36px 46px;
+
+                    .cta-btn {
+                        &:nth-child(1) {
+                            background-color: var(--white);
+
+                            span {
+                                color: var(--black);
+                            }
+
+                            .arrow-svg {
+                                background-color: black;
+
+                                svg {
+                                    path {
+                                        fill: var(--white);
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background: var(--black);
+                                border: 1px solid var(--white);
+
+                                span {
+                                    color: var(--white);
+                                }
+
+                                .arrow-svg {
+                                    background-color: var(--white);
+
+                                    svg {
+                                        path {
+                                            fill: var(--black);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .social-proof-wrapper {
@@ -448,7 +531,8 @@
             }
         }
     }
-} */
+}
+
 /* END :: Hero Section 
 ************************************** */
 /* ############################### */
