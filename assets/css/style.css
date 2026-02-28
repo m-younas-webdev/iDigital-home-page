@@ -351,7 +351,7 @@
             }
 
             .digital-hero-container-content {
-                max-width: 680px;
+                max-width: 562px;
 
                 .service-status-label {
                     display: flex;
@@ -503,9 +503,9 @@
                         }
 
                         .social-users-label {
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 400;
                             color: var(--white);
                             font-family: var(--ff-satoshi);
                             padding-top: 6px;
@@ -756,10 +756,6 @@
                 }
 
                 .service-detail-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 14px;
-
                     .services-detail {
                         font-size: 1.4vw;
                         font-weight: 400;
@@ -806,7 +802,7 @@
 
             .section-desc {
                 padding-bottom: 30px;
-                max-width: 650px;
+                max-width: 546px;
             }
 
             .company-trust-cards-wrapper {
