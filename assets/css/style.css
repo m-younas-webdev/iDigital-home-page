@@ -545,7 +545,7 @@
 /* START :: Partner Section 
 ************************************** */
 .partners-section {
-    margin: 120px 0;
+    margin: 100px 0 90px;
 
     .partners-container {
         .section-title {
@@ -732,7 +732,7 @@
             gap: 30px;
 
             .services-image {
-                max-width: 600px;
+                max-width: 475px;
                 width: 100%;
 
                 img {
@@ -752,7 +752,7 @@
 
                 .section-title {
                     text-align: start;
-                    padding: 22px 0 13px;
+                    padding: 13px 0 10px;
                 }
 
                 .service-detail-wrapper {
@@ -770,21 +770,7 @@
                 }
 
                 .cta-buttons {
-                    padding-top: 38px;
-
-                    .cta-btn {
-                        &.blue {}
-
-                        &.black {}
-
-                        span {}
-
-                        .arrow-svg {
-                            svg {
-                                path {}
-                            }
-                        }
-                    }
+                    padding-top: 34px;
                 }
             }
         }
@@ -811,12 +797,15 @@
 
             .section-title {
                 max-width: 700px;
-                padding: 22px 0 14px;
+                padding: 16px 0 12px;
                 margin: 0 auto;
+                font-size: 35px;
+                line-height: 44px;
+                max-width: 500px;
             }
 
             .section-desc {
-                padding-bottom: 40px;
+                padding-bottom: 30px;
                 max-width: 650px;
             }
 
@@ -831,11 +820,11 @@
                     border-radius: 22px;
 
                     .trust-card-content {
-                        padding: 17px 18px 0 23px;
+                        padding: 14px 14px 0 16px;
 
                         h4 {
-                            font-size: 35px;
-                            line-height: 44px;
+                            font-size: 30px;
+                            line-height: 38px;
                             font-weight: 500;
                             font-family: var(--ff-clash);
                         }
@@ -849,7 +838,7 @@
                         }
 
                         .cta-btn {
-                            max-width: 164px;
+                            max-width: 144px;
                             width: 100%;
 
                             &.blue {}
@@ -913,17 +902,18 @@
 
                     .section-title {
                         text-align: start;
-                        max-width: 500px;
-                        line-height: 55px;
+                        max-width: 400px;
+                        line-height: 44px;
                         padding-top: 21px;
+                        font-size: 36px;
                     }
                 }
 
                 .testimonial-header-desc {
-                    font-size: 20px;
-                    line-height: 30px;
+                    font-size: 17px;
+                    line-height: 25px;
                     font-family: var(--ff-satoshi);
-                    max-width: 493px;
+                    max-width: 423px;
                 }
             }
 
@@ -935,78 +925,83 @@
                     gap: 18px;
                     align-items: center;
 
-                    .testimonial-user-card.swiper-slide {
-                        font-size: 18px;
-                        background: #F3F7FD;
-                    }
+                    .swiper-slide {
+                        width: 33%;
 
-                    .testimonial-user-card {
-                        background-color: #F3F7FD;
-                        border-radius: 22px;
-                        padding: 28px;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-
-                        .quote-icon {
-                            padding: 22px;
-                            border-radius: 50%;
-                            background-color: var(--blue);
-                            max-width: max-content;
-
-                            svg {
-                                width: 38px;
-                                height: 31px;
-
-                                path {}
-                            }
-                        }
-
-                        .user-comment {
-                            font-size: 24px;
-                            font-family: var(--ff-satoshi);
-                            line-height: 34px;
-                            font-weight: 500;
-                        }
-
-                        .testimonial-ranking-badge {
-                            svg {
-                                path {}
-                            }
-                        }
-
-                        .testi-profile-wrapper {
+                        .testimonial-user-card {
+                            background-color: #F3F7FD;
+                            border-radius: 22px;
+                            padding: 28px;
                             display: flex;
-                            gap: 16px;
-                            align-items: center;
+                            flex-direction: column;
 
-                            .profile-avatar {
-                                width: 77px;
-                                aspect-ratio: 1;
+                            /* gap: 20px; */
+                            .quote-icon {
+                                padding: 14px;
+                                border-radius: 50%;
+                                background-color: var(--blue);
+                                max-width: max-content;
 
-                                img {
-                                    border-radius: 22px;
+                                svg {
+                                    width: 26px;
+                                    height: 22px;
+
+                                    path {}
                                 }
                             }
 
-                            .profile-info {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 8px;
+                            .user-comment {
+                                font-size: 20px;
+                                font-family: var(--ff-satoshi);
+                                line-height: 28px;
+                                font-weight: 500;
+                                padding: 20px 0 6px;
+                            }
 
-                                .profile-name {
-                                    font-size: 20px;
-                                    line-height: 24px;
-                                    font-weight: 500;
-                                    font-family: var(--ff-clash);
-                                    text-align: start;
+                            .testimonial-ranking-badge {
+                                padding: 8px;
+
+                                svg {
+                                    width: 100px;
+                                    aspect-ratio: 1;
+
+                                    path {}
+                                }
+                            }
+
+                            .testi-profile-wrapper {
+                                display: flex;
+                                gap: 16px;
+                                align-items: center;
+
+                                .profile-avatar {
+                                    width: 52px;
+                                    aspect-ratio: 1;
+
+                                    img {
+                                        border-radius: 16px;
+                                    }
                                 }
 
-                                .user-designation {
-                                    font-size: 16px;
-                                    line-height: 20px;
-                                    color: #6A6A6A;
-                                    font-family: var(--ff-satoshi);
+                                .profile-info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+
+                                    .profile-name {
+                                        font-size: 18px;
+                                        line-height: 24px;
+                                        font-weight: 500;
+                                        font-family: var(--ff-clash);
+                                        text-align: start;
+                                    }
+
+                                    .user-designation {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        color: #6A6A6A;
+                                        font-family: var(--ff-satoshi);
+                                    }
                                 }
                             }
                         }
