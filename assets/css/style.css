@@ -335,7 +335,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 80px 0 92px 94px;
+            padding: 60px 0 66px 68px;
             position: relative;
             z-index: 1;
 
@@ -357,26 +357,29 @@
                     display: flex;
                     gap: 9px;
                     align-items: center;
-                    padding: 4px;
+                    padding: 2px;
                     border: 1px solid #E2E2E2;
                     max-width: max-content;
                     border-radius: 50px;
                     background-color: white;
 
                     .statu-label-icon {
-                        padding: 6px;
+                        padding: 4px;
                         border-radius: 50%;
                         display: grid;
                         place-items: center;
                         background-color: var(--blue);
                         max-width: max-content;
 
-                        svg {}
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
                     }
 
                     span {
-                        font-size: 18px;
-                        line-height: 24px;
+                        font-size: 12px;
+                        line-height: 14px;
                         color: var(--black);
                         font-family: var(--ff-satoshi);
                         padding-right: 13px;
@@ -384,25 +387,25 @@
                 }
 
                 .digital-hero-container-head {
-                    font-size: 70px;
-                    line-height: 76px;
+                    font-size: 57px;
+                    line-height: 65px;
                     color: var(--white);
                     font-family: var(--ff-clash);
                     font-weight: 500;
-                    padding: 30px 0 17px;
+                    padding: 26px 0 13px;
                 }
 
                 .hero-container-desc {
-                    font-size: 26px;
-                    line-height: 40px;
+                    font-size: 22px;
+                    line-height: 29px;
                     font-family: var(--ff-satoshi);
                     color: var(--white);
-                    max-width: 540px;
+                    max-width: 448px;
                     word-spacing: 3px;
                 }
 
                 .cta-buttons {
-                    padding: 36px 46px;
+                    padding: 28px 0 32px;
 
                     .cta-btn {
                         &:nth-child(1) {
@@ -455,8 +458,8 @@
 
                         .user-image {
                             img {
-                                width: 55px;
-                                height: 55px;
+                                width: 48px;
+                                height: 48px;
                                 border-radius: 50%;
                                 border: 2px solid var(--white);
                                 display: flex;
@@ -492,8 +495,8 @@
 
                     .social-users-trust-stack {
                         .users-counter {
-                            font-size: 24px;
-                            line-height: 30px;
+                            font-size: 20px;
+                            line-height: 26px;
                             font-weight: 700;
                             font-family: var(--ff-satoshi);
                             color: var(--white);
@@ -513,8 +516,8 @@
                 .social-ranking-badge-wrapper {
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
-                    padding-top: 41px;
+                    gap: 4px;
+                    padding-top: 28px;
 
                     .social-ranking-label {
                         font-size: 18px;
@@ -542,41 +545,39 @@
 /* START :: Partner Section 
 ************************************** */
 .partners-section {
-    margin: 118px 0 140px;
+    margin: 120px 0;
 
-    .container {
-        .partners-container {
-            .section-title {
-                padding: 22px 0 36px;
-            }
+    .partners-container {
+        .section-title {
+            padding: 12px 0 30px;
+        }
 
-            .partners-logos-containers {
-                display: flex;
-                flex-direction: column;
-                gap: 18px;
+        .partners-logos-containers {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
 
-                .partner-logo-container.swiper {
-                    width: 100%;
+            .partner-logo-container.swiper {
+                width: 100%;
 
-                    /* Smooth continuous transition */
-                    .swiper-wrapper {
-                        transition-timing-function: linear !important;
+                /* Smooth continuous transition */
+                .swiper-wrapper {
+                    transition-timing-function: linear !important;
 
-                        .logo-item.swiper-slide {
-                            width: 220px;
-                            height: 110px;
-                            background-color: #4C4C4C0D;
-                            display: grid;
-                            place-items: center;
-                            border-radius: 13px;
+                    .logo-item.swiper-slide {
+                        width: 180px;
+                        height: 80px;
+                        background-color: #4C4C4C0D;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 13px;
 
-                            .logo-image {
-                                width: 132px;
+                        .logo-image {
+                            width: 100px;
 
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                            img {
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
@@ -611,7 +612,7 @@
             }
 
             .section-title {
-                padding: 22px 0 12px;
+                padding: 16px 0 12px;
                 color: var(--black);
             }
 
