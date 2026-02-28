@@ -814,6 +814,9 @@
                     width: 50%;
                     background-color: var(--white);
                     border-radius: 22px;
+                    display: flex;
+                    gap: 32px;
+                    flex-direction: column;
 
                     .trust-card-content {
                         padding: 14px 14px 0 16px;
@@ -845,7 +848,7 @@
                             }
 
                             .arrow-svg {
-                                padding: 3px 8px;
+                                padding: 3px 6px;
 
                                 svg {
                                     width: 15px;
@@ -858,8 +861,6 @@
                     }
 
                     .trust-card-image {
-                        padding-top: 32px;
-
                         img {
                             border-radius: 22px;
                             aspect-ratio: 603/343;
@@ -918,7 +919,6 @@
                 height: 100%;
 
                 .testimonial-cards-container.swiper-wrapper {
-                    gap: 18px;
                     align-items: center;
 
                     .swiper-slide {

@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: "auto", // JS will now stop calculating width
-  speed: 3000,
+  speed: 5000,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
