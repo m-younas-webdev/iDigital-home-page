@@ -326,6 +326,265 @@
     .container {
         .digital-hero-container {
             border-radius: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 60px 0 66px 68px;
+            position: relative;
+            z-index: 1;
+
+            .digital-hero-container-content {
+                max-width: 562px;
+
+                .service-status-label {
+                    display: flex;
+                    gap: 9px;
+                    align-items: center;
+                    padding: 4px;
+                    border: 1px solid #E2E2E2;
+                    max-width: max-content;
+                    border-radius: 50px;
+                    background-color: white;
+
+                    .statu-label-icon {
+                        padding: 4px;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        background-color: var(--blue);
+                        max-width: max-content;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                    span {
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: var(--black);
+                        font-family: var(--ff-satoshi);
+                        padding-right: 13px;
+                    }
+                }
+
+                /* ####################  */
+                .digital-hero-container-head {
+                    font-size: 57px;
+                    line-height: 65px;
+                    font-family: var(--ff-clash);
+                    font-weight: 500;
+                    padding: 26px 0 13px;
+                }
+
+                .hero-container-desc {
+                    font-size: 22px;
+                    line-height: 29px;
+                    font-family: var(--ff-satoshi);
+                    color: var(--white);
+                    max-width: 448px;
+                    word-spacing: 3px;
+                }
+
+                .cta-buttons {
+                    padding: 28px 0 32px;
+
+                    .cta-btn {
+                        &:nth-child(1) {
+                            span {}
+
+                            .arrow-svg {
+                                svg {
+                                    path {}
+                                }
+                            }
+
+                            &:hover {
+                                span {}
+
+                                .arrow-svg {
+                                    svg {
+                                        path {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .social-proof-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+
+                    .social-users-images {
+                        display: flex;
+                        align-items: center;
+
+                        .user-image {
+                            img {
+                                width: 48px;
+                                height: 48px;
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                display: flex;
+                            }
+                        }
+
+                        & :nth-child(1).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                background-color: var(--blue);
+                            }
+                        }
+
+                        & :nth-child(2).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                background-color: var(--black);
+                                margin-left: -13px;
+                            }
+                        }
+
+                        & :nth-child(3).user-image {
+                            img {
+                                border-radius: 50%;
+                                border: 2px solid var(--white);
+                                background-color: var(--blue);
+                                margin-left: -13px;
+                            }
+                        }
+                    }
+
+                    .social-users-trust-stack {
+                        .users-counter {
+                            font-size: 20px;
+                            line-height: 26px;
+                            font-weight: 700;
+                            font-family: var(--ff-satoshi);
+                        }
+
+                        .social-users-label {
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 400;
+                            font-family: var(--ff-satoshi);
+                            padding-top: 2px;
+                        }
+                    }
+                }
+
+                .social-ranking-badge-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    padding-top: 28px;
+
+                    .social-ranking-label {
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-family: var(--ff-satoshi);
+                        font-weight: 400;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* IDigital Hero Section Version 1  */
+.digital-hero-section.version-primary {
+    .container {
+        .digital-hero-container {
+            background-image: url(../media/hero-section-v1-bg-image.png);
+
+            .digital-hero-container-content {
+                .digital-hero-container-head {
+                    color: var(--black);
+                }
+
+                .hero-container-desc {
+                    color: var(--black);
+                }
+
+                .cta-buttons {
+                    .cta-btn {
+                        &:nth-child(1) {
+                            background-color: var(--blue);
+
+                            span {
+                                color: var(white);
+                            }
+
+                            .arrow-svg {
+                                background-color: var(--white);
+
+                                svg {
+                                    path {
+                                        fill: var(--black);
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background-color: var(--white);
+
+                                span {
+                                    color: var(--blue);
+                                }
+
+                                .arrow-svg {
+                                    background-color: var(--blue);
+
+                                    svg {
+                                        path {
+                                            fill: var(--white);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .social-proof-wrapper {
+                    .social-users-trust-stack {
+                        .users-counter {
+                            color: var(--black);
+                        }
+
+                        .social-users-label {
+                            color: var(--black);
+                        }
+                    }
+                }
+
+                .social-ranking-badge-wrapper {
+                    .social-ranking-label {
+                        color: var(--black);
+
+                        span {
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* IDigital Hero Section Version 2  */
+.digital-hero-section.version-secondary {
+    .container {
+        .digital-hero-container {
+            border-radius: 40px;
             background-image: url(../media/digital-hero-bg-image.png);
             background-size: cover;
             background-position: center;
@@ -531,7 +790,11 @@
     }
 }
 
-/* END :: Hero Section 
+/* ###################  */
+/* ###################  */
+/* ###################  */
+/* ###################  */
+/*
 ************************************** */
 /* ############################### */
 /* ############################### */
@@ -1097,3 +1360,174 @@
         }
     }
 }
+
+/* END :: Contact Section 
+************************************** */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* ##########################  */
+/* START :: Footer Section
+************************************** */
+.footer-section {
+    padding: 36px 116px 14px 100px;
+    background-color: var(--black);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    .footer-container {
+        height: 472px;
+
+        .footer-main-container {
+            display: flex;
+            justify-content: space-between;
+
+            .footer-newsletter {
+                .digital-main-logo {
+                    a {
+                        color: var(--white);
+                    }
+                }
+
+                .newletter-desc {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #FFFFFFE5;
+                    font-family: var(--ff-satoshi);
+                    max-width: 230px;
+                    font-weight: 400;
+                    padding: 11px 0 31px;
+                }
+
+                .subscribe-bar {
+                    padding: 5px 5px 5px 10px;
+                    background-color: var(--white);
+                    display: flex;
+                    border-radius: 100px;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .massage-icon {
+                        border-radius: 50%;
+                        background-color: var(--blue);
+                        max-width: max-content;
+                        width: 40px;
+                        aspect-ratio: 1;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            margin-left: 1px;
+
+                            path {}
+                        }
+                    }
+
+                    .input-label {
+                        input {
+                            border: none;
+                            padding: 6px 17px 0px 12px;
+
+                            &::placeholder {
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: var(--black);
+                            }
+                        }
+                    }
+
+                    .subscribe-btn {
+                        width: 130px;
+                        height: 45px;
+                        background-color: var(--blue);
+                        color: var(--white);
+                        border-radius: 100px;
+                        outline: none;
+                        border: none;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 25px;
+                        }
+                    }
+                }
+
+                .policy-text {
+                    color: var(--white);
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-family: var(--ff-satoshi);
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .social-network-wrapper {
+                display: flex;
+                gap: 30px;
+
+                .footer-nav-container {
+                    .footer-nav-head {
+                        font-size: 23px;
+                        line-height: 28px;
+                        color: var(--white);
+                        font-family: var(--ff-clash);
+                        font-weight: 500;
+                    }
+
+                    .footer-nav-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        padding-top: 26px;
+
+                        .footer-nav-item {
+                            a {
+                                color: var(--white);
+                                font-size: 16px;
+                                line-height: 18px;
+                                font-family: var(--ff-satoshi);
+                                font-weight: 400;
+
+                                &.connecting-wrapper {
+                                    svg {
+                                        g {
+                                            path {}
+                                        }
+
+                                        defs {
+                                            clipPath {
+                                                rect {}
+                                            }
+                                        }
+                                    }
+
+                                    .connecting-text {
+                                        .connent-title {}
+
+                                        span {}
+                                    }
+
+                                    p.connecting-text {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END :: Footer Section
+************************************** */
