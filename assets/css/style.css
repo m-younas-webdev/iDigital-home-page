@@ -1276,36 +1276,20 @@
 /* START :: Contact Section
 ************************************** */
 .contact-section {
+    padding-bottom: 100px;
+
     .container {
         .contact-container {
             background-color: var(--blue);
             display: flex;
-            gap: 55px;
             overflow: hidden;
             border-radius: 40px;
+            gap: 55px;
             padding-right: 95px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
-            /* 
             .contact-image-wrapper {
-                .contact-image {
-                    max-width: 770px;
-                    position: relative;
-
-                    &::before {
-                        content: '';
-                   
-                    }
-
-                    img {
-                        display: flex;
-                        object-fit: cover;
-                        border-radius: 40px;
-                    }
-                }
-            } */
-            .contact-image-wrapper {
-                width: 770px;
-                height: 100%;
                 background-color: var(--blue);
                 border-radius: 50%;
                 position: relative;
@@ -1313,6 +1297,9 @@
                 .contact-image {
                     width: 100%;
                     height: 100%;
+                    border-radius: 300px;
+                    transform: scale(1.5) translateX(-100px);
+                    overflow: hidden;
 
                     img {
                         display: flex;
@@ -1324,7 +1311,6 @@
             .contact-container-content {
                 padding: 70px 0;
                 position: relative;
-                width: 600px;
 
                 .title-label {
                     background-color: white;
@@ -1474,7 +1460,7 @@
 
             .social-network-wrapper {
                 display: flex;
-                gap: 30px;
+                gap: 40px;
 
                 .footer-nav-container {
                     .footer-nav-head {
@@ -1500,6 +1486,10 @@
                                 font-weight: 400;
 
                                 &.connecting-wrapper {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 14px;
+
                                     svg {
                                         g {
                                             path {}
@@ -1513,6 +1503,13 @@
                                     }
 
                                     .connecting-text {
+                                        font-size: 14px;
+                                        color: var(--white);
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        font-family: var(--ff-satoshi);
+                                        width: 140px;
+
                                         .connent-title {}
 
                                         span {}

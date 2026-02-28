@@ -1,10 +1,12 @@
-.digital-hero-section v2 {
+.digital-hero-section {
   .container {
     .digital-hero-container {
+      border-radius: 40px;
       background-image: url(../media/digital-hero-bg-image.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      padding: 60px 0 66px 68px;
       position: relative;
       z-index: 1;
 
@@ -23,7 +25,13 @@
         max-width: 562px;
 
         .service-status-label {
+          display: flex;
+          gap: 9px;
+          align-items: center;
+          padding: 2px;
           border: 1px solid #E2E2E2;
+          max-width: max-content;
+          border-radius: 50px;
           background-color: white;
 
           .statu-label-icon {
