@@ -115,292 +115,82 @@
 /* #########################  */
 /* START :: Hero Section 
 ************************************** */
-/* .digital-hero-section {
-    .container {
-        .digital-hero-container {
-            border-radius: 40px;
-            background-image: url(../media/hero-section-v1-bg-image.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+.digital-hero-section {
+    position: relative;
+    overflow: hidden;
 
-            .digital-hero-container-content {
-                padding: 94px 0 92px 80px;
+    .hero-version {
+        transition: all 3s ease;
 
-                .service-status-label {
-                    display: flex;
-                    gap: 9px;
-                    align-items: center;
-                    padding: 4px;
-                    border: 1px solid #E2E2E2;
-                    max-width: max-content;
-                    border-radius: 50px;
-                    background-color: var(--white);
+        & .container {
+            .digital-hero-container {
+                border-radius: 40px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 60px 0 66px 68px;
+                position: relative;
+                z-index: 1;
 
-                    .statu-label-icon {
-                        padding: 6px;
-                        border-radius: 50%;
-                        display: grid;
-                        place-items: center;
-                        background-color: var(--blue);
-                        max-width: max-content;
+                .digital-hero-container-content {
+                    max-width: 562px;
 
-                        svg {}
-                    }
-
-                    span {
-                        font-size: 18px;
-                        line-height: 24px;
-                        color: var(--black);
-                        font-family: var(--ff-satoshi);
-                        padding-right: 13px;
-                    }
-                }
-
-                .digital-hero-container-head {
-                    font-size: 70px;
-                    line-height: 76px;
-                    color: var(--black);
-                    font-family: var(--ff-clash);
-                    font-weight: 500;
-                    max-width: 680px;
-                    padding: 30px 0 17px;
-                }
-
-                .hero-container-desc {
-                    font-size: 26px;
-                    line-height: 40px;
-                    font-family: var(--ff-satoshi);
-                    color: var(--black);
-                    max-width: 540px;
-                    word-spacing: 3px;
-                }
-
-                .cta-buttons {
-                    display: flex;
-                    gap: 14px;
-                    padding: 36px 0 46px;
-
-                    .cta-btn {
-                        &:nth-child(1) {
-                            background-color: var(--blue);
-
-                            &:hover {
-                                background: white;
-                                border: 1px solid var(--blue);
-
-                                span {
-                                    color: var(--blue);
-                                }
-
-                                .arrow-svg {
-                                    background-color: var(--blue);
-
-                                    svg {
-                                        path {
-                                            fill: var(--white);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .cta-btn {
-                        &.black {
-                            background-color: black;
-
-                            &:hover {
-                                background-color: white;
-
-                                span {
-                                    color: var(--black);
-                                }
-
-                                .arrow-svg {
-                                    background-color: black;
-
-                                    svg {
-                                        path {
-                                            fill: white;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .social-proof-wrapper {
-                    display: flex;
-                    align-items: center;
-                    gap: 11px;
-
-                    .social-users-images {
+                    .service-status-label {
                         display: flex;
+                        gap: 9px;
                         align-items: center;
+                        padding: 4px;
+                        border: 1px solid #E2E2E2;
+                        max-width: max-content;
+                        border-radius: 50px;
+                        background-color: white;
 
-                        .user-image {
-                            img {
-                                width: 55px;
-                                height: 55px;
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                display: flex;
+                        .statu-label-icon {
+                            padding: 4px;
+                            border-radius: 50%;
+                            display: grid;
+                            place-items: center;
+                            background-color: var(--blue);
+                            max-width: max-content;
+
+                            svg {
+                                width: 16px;
+                                height: 16px;
                             }
                         }
-
-                        & :nth-child(1).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
-                            }
-                        }
-
-                        & :nth-child(2).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--black);
-                                margin-left: -13px;
-                            }
-                        }
-
-                        & :nth-child(3).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
-                                margin-left: -13px;
-                            }
-                        }
-                    }
-
-                    .social-users-trust-stack {
-                        .users-counter {
-                            font-size: 24px;
-                            line-height: 30px;
-                            font-weight: 700;
-                            font-family: var(--ff-satoshi);
-                            color: var(--black);
-                        }
-
-                        .social-users-label {
-                            font-size: 16px;
-                            line-height: 21px;
-                            font-weight: 500;
-                            color: var(--black);
-                            font-family: var(--ff-satoshi);
-                            padding-top: 6px;
-                        }
-                    }
-                }
-
-                .social-ranking-badge-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    padding: 41px 0 46px;
-
-                    .social-ranking-label {
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-family: var(--ff-satoshi);
-                        font-weight: 400;
 
                         span {
-                            font-weight: 700;
-                        }
-                    }
-                }
-
-                .swiper-wrapper {}
-
-                .swiper-pagination {}
-            }
-        }
-    }
-} */
-.digital-hero-section {
-    .container {
-        .digital-hero-container {
-            border-radius: 40px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 60px 0 66px 68px;
-            position: relative;
-            z-index: 1;
-
-            .digital-hero-container-content {
-                max-width: 562px;
-
-                .service-status-label {
-                    display: flex;
-                    gap: 9px;
-                    align-items: center;
-                    padding: 4px;
-                    border: 1px solid #E2E2E2;
-                    max-width: max-content;
-                    border-radius: 50px;
-                    background-color: white;
-
-                    .statu-label-icon {
-                        padding: 4px;
-                        border-radius: 50%;
-                        display: grid;
-                        place-items: center;
-                        background-color: var(--blue);
-                        max-width: max-content;
-
-                        svg {
-                            width: 16px;
-                            height: 16px;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: var(--black);
+                            font-family: var(--ff-satoshi);
+                            padding-right: 13px;
                         }
                     }
 
-                    span {
-                        font-size: 12px;
-                        line-height: 14px;
-                        color: var(--black);
+                    /* ####################  */
+                    .digital-hero-container-head {
+                        font-size: 57px;
+                        line-height: 65px;
+                        font-family: var(--ff-clash);
+                        font-weight: 500;
+                        padding: 26px 0 13px;
+                    }
+
+                    .hero-container-desc {
+                        font-size: 22px;
+                        line-height: 29px;
                         font-family: var(--ff-satoshi);
-                        padding-right: 13px;
+                        color: var(--white);
+                        max-width: 448px;
+                        word-spacing: 3px;
                     }
-                }
 
-                /* ####################  */
-                .digital-hero-container-head {
-                    font-size: 57px;
-                    line-height: 65px;
-                    font-family: var(--ff-clash);
-                    font-weight: 500;
-                    padding: 26px 0 13px;
-                }
+                    .cta-buttons {
+                        padding: 28px 0 32px;
 
-                .hero-container-desc {
-                    font-size: 22px;
-                    line-height: 29px;
-                    font-family: var(--ff-satoshi);
-                    color: var(--white);
-                    max-width: 448px;
-                    word-spacing: 3px;
-                }
-
-                .cta-buttons {
-                    padding: 28px 0 32px;
-
-                    .cta-btn {
-                        &:nth-child(1) {
-                            span {}
-
-                            .arrow-svg {
-                                svg {
-                                    path {}
-                                }
-                            }
-
-                            &:hover {
+                        .cta-btn {
+                            &:nth-child(1) {
                                 span {}
 
                                 .arrow-svg {
@@ -408,89 +198,99 @@
                                         path {}
                                     }
                                 }
+
+                                &:hover {
+                                    span {}
+
+                                    .arrow-svg {
+                                        svg {
+                                            path {}
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                }
 
-                .social-proof-wrapper {
-                    display: flex;
-                    align-items: center;
-                    gap: 11px;
-
-                    .social-users-images {
+                    .social-proof-wrapper {
                         display: flex;
                         align-items: center;
+                        gap: 11px;
 
-                        .user-image {
-                            img {
-                                width: 48px;
-                                height: 48px;
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                display: flex;
+                        .social-users-images {
+                            display: flex;
+                            align-items: center;
+
+                            .user-image {
+                                img {
+                                    width: 48px;
+                                    height: 48px;
+                                    border-radius: 50%;
+                                    border: 2px solid var(--white);
+                                    display: flex;
+                                }
+                            }
+
+                            & :nth-child(1).user-image {
+                                img {
+                                    border-radius: 50%;
+                                    border: 2px solid var(--white);
+                                    background-color: var(--blue);
+                                }
+                            }
+
+                            & :nth-child(2).user-image {
+                                img {
+                                    border-radius: 50%;
+                                    border: 2px solid var(--white);
+                                    background-color: var(--black);
+                                    margin-left: -13px;
+                                }
+                            }
+
+                            & :nth-child(3).user-image {
+                                img {
+                                    border-radius: 50%;
+                                    border: 2px solid var(--white);
+                                    background-color: var(--blue);
+                                    margin-left: -13px;
+                                }
                             }
                         }
 
-                        & :nth-child(1).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
+                        .social-users-trust-stack {
+                            .users-counter {
+                                font-size: 20px;
+                                line-height: 26px;
+                                font-weight: 700;
+                                font-family: var(--ff-satoshi);
                             }
-                        }
 
-                        & :nth-child(2).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--black);
-                                margin-left: -13px;
-                            }
-                        }
-
-                        & :nth-child(3).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
-                                margin-left: -13px;
+                            .social-users-label {
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-weight: 400;
+                                font-family: var(--ff-satoshi);
+                                padding-top: 2px;
                             }
                         }
                     }
 
-                    .social-users-trust-stack {
-                        .users-counter {
-                            font-size: 20px;
-                            line-height: 26px;
-                            font-weight: 700;
-                            font-family: var(--ff-satoshi);
-                        }
+                    .social-ranking-badge-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                        padding-top: 28px;
 
-                        .social-users-label {
-                            font-size: 14px;
-                            line-height: 18px;
+                        .social-ranking-label {
+                            font-size: 18px;
+                            line-height: 24px;
+                            font-family: var(--ff-satoshi);
                             font-weight: 400;
-                            font-family: var(--ff-satoshi);
-                            padding-top: 2px;
-                        }
-                    }
-                }
 
-                .social-ranking-badge-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 4px;
-                    padding-top: 28px;
-
-                    .social-ranking-label {
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-family: var(--ff-satoshi);
-                        font-weight: 400;
-
-                        span {
-                            font-weight: 700;
+                            span {
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
@@ -500,7 +300,19 @@
 }
 
 /* IDigital Hero Section Version 1  */
-.digital-hero-section.version-primary {
+.version-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 3s ease;
+
+    &.active {
+        opacity: 1;
+        position: relative;
+    }
+
     .container {
         .digital-hero-container {
             background-image: url(../media/hero-section-v1-bg-image.png);
@@ -581,7 +393,21 @@
 }
 
 /* IDigital Hero Section Version 2  */
-.digital-hero-section.version-secondary {
+.version-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    opacity: 0;
+    transition: all 3s ease;
+
+    &.active {
+        opacity: 1;
+        position: relative;
+    }
+
     .container {
         .digital-hero-container {
             border-radius: 40px;
@@ -790,10 +616,6 @@
     }
 }
 
-/* ###################  */
-/* ###################  */
-/* ###################  */
-/* ###################  */
 /*
 ************************************** */
 /* ############################### */
@@ -1363,7 +1185,9 @@
     border-top-right-radius: 50px;
 
     .footer-container {
-        height: 472px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
 
         .footer-main-container {
             display: flex;
@@ -1418,13 +1242,19 @@
                     .input-label {
                         input {
                             border: none;
-                            padding: 6px 17px 0px 12px;
+                            padding: 6px 0px 0px 12px;
+                            outline: none;
+                            font-size: 18px;
+                            line-height: 24px;
+                            width: 178px;
 
                             &::placeholder {
                                 font-size: 18px;
                                 font-weight: 400;
                                 line-height: 20px;
                                 color: var(--black);
+                                border: none;
+                                outline: none;
                             }
                         }
                     }
@@ -1454,6 +1284,9 @@
 
                     a {
                         text-decoration: underline;
+                        color: var(--white);
+                        font-weight: 500;
+                        text-underline-offset: 4px;
                     }
                 }
             }
@@ -1479,6 +1312,7 @@
 
                         .footer-nav-item {
                             a {
+                                max-width: max-content;
                                 color: var(--white);
                                 font-size: 16px;
                                 line-height: 18px;
@@ -1491,6 +1325,9 @@
                                     gap: 14px;
 
                                     svg {
+                                        width: 45px;
+                                        aspect-ratio: 1;
+
                                         g {
                                             path {}
                                         }
@@ -1517,6 +1354,47 @@
 
                                     p.connecting-text {}
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .copyright-text {
+                font-size: 14px;
+                line-height: 16px;
+                color: var(--white);
+                font-family: var(--ff-satoshi);
+                font-weight: 400;
+            }
+
+            .social-media-links {
+                display: flex;
+                gap: 6px;
+                align-items: center;
+
+                .social-media-link {
+                    padding: 8px;
+                    background-color: var(--white);
+                    border-radius: 50%;
+                    display: flex;
+
+                    svg {
+                        g {
+                            path {}
+                        }
+
+                        path {}
+
+                        defs {
+                            clipPath {
+                                rect {}
                             }
                         }
                     }
