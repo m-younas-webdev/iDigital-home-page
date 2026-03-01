@@ -88,16 +88,18 @@
 
         .social-media-links {
           .social-media-link {
-            svg {
-              g {
+            a {
+              svg {
+                g {
+                  path {}
+                }
+
                 path {}
-              }
 
-              path {}
-
-              defs {
-                clipPath {
-                  rect {}
+                defs {
+                  clipPath {
+                    rect {}
+                  }
                 }
               }
             }
@@ -863,6 +865,172 @@
                   .profile-name {}
 
                   .user-designation {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-section {
+    .footer-container {
+      .footer-main-container {
+        .footer-newsletter {
+          .digital-main-logo {
+            a {}
+          }
+
+          .newletter-desc {}
+
+          .subscribe-bar {
+            .massage-icon {
+              svg {
+                path {}
+              }
+            }
+
+            .input-label {
+              input {}
+            }
+
+            .subscribe-btn {
+              span {}
+            }
+          }
+
+          .policy-text {
+            a {}
+          }
+        }
+
+        .social-network-wrapper {
+          display: grid;
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+
+          & :nth-child(1).footer-nav-container {
+            grid-column: 1 / 3;
+            margin: 0 auto;
+            text-align: center;
+
+            .footer-nav-head {}
+
+            .footer-nav-list {
+              .footer-nav-item {
+                a {
+                  &.connecting-wrapper {
+                    svg {
+                      g {
+                        path {}
+                      }
+
+                      defs {
+                        clipPath {
+                          rect {}
+                        }
+                      }
+                    }
+
+                    .connecting-text {
+                      .connent-title {}
+
+                      span {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          & :nth-child(2).footer-nav-container {
+            grid-row: 2;
+            margin: 0 auto;
+            text-align: center;
+
+            .footer-nav-head {}
+
+            .footer-nav-list {
+              .footer-nav-item {
+                a {
+                  &.connecting-wrapper {
+                    svg {
+                      g {
+                        path {}
+                      }
+
+                      defs {
+                        clipPath {
+                          rect {}
+                        }
+                      }
+                    }
+
+                    .connecting-text {
+                      .connent-title {}
+
+                      span {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          & :nth-child(3).footer-nav-container {
+            grid-row: 2;
+            margin: 0 auto;
+            text-align: center;
+
+            .footer-nav-head {}
+
+            .footer-nav-list {
+              .footer-nav-item {
+                a {
+                  &.connecting-wrapper {
+                    svg {
+                      g {
+                        path {}
+                      }
+
+                      defs {
+                        clipPath {
+                          rect {}
+                        }
+                      }
+                    }
+
+                    .connecting-text {
+                      .connent-title {}
+
+                      span {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer-bottom-bar-container {
+        .copyright-text {}
+
+        .social-media-links {
+          .social-media-link {
+            a {
+              svg {
+                g {
+                  path {}
+                }
+
+                path {}
+
+                defs {
+                  clipPath {
+                    rect {}
+                  }
                 }
               }
             }

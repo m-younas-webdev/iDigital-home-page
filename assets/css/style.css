@@ -1380,21 +1380,37 @@
                 align-items: center;
 
                 .social-media-link {
-                    padding: 8px;
-                    background-color: var(--white);
-                    border-radius: 50%;
-                    display: flex;
+                    a {
+                        padding: 8px;
+                        background-color: var(--white);
+                        border-radius: 50%;
+                        display: flex;
+                        border: 1px solid var(--black);
 
-                    svg {
-                        g {
+                        svg {
+                            g {
+                                path {
+                                    transition: all .3s ease;
+                                }
+                            }
+
                             path {}
+
+                            defs {
+                                clipPath {
+                                    rect {}
+                                }
+                            }
                         }
 
-                        path {}
+                        &:hover {
+                            background-color: black;
+                            border: 1px solid var(--white);
 
-                        defs {
-                            clipPath {
-                                rect {}
+                            svg {
+                                path {
+                                    fill: var(--white);
+                                }
                             }
                         }
                     }
