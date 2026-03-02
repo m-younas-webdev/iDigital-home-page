@@ -132,7 +132,7 @@
                         display: flex;
                         gap: 9px;
                         align-items: center;
-                        padding: 4px;
+                        padding: 2px;
                         border: 1px solid #E2E2E2;
                         max-width: max-content;
                         border-radius: 50px;
@@ -188,7 +188,9 @@
                             &:nth-child(1) {
                                 transition: all 2s ease;
 
-                                span {}
+                                span {
+                                    transition: all .3s ease;
+                                }
 
                                 .arrow-svg {
                                     svg {
@@ -327,6 +329,7 @@
                     opacity: 0;
                     visibility: hidden;
                     transition: all 2s ease;
+                    z-index: -2;
 
                     img {
                         border-radius: 40px;
@@ -334,6 +337,14 @@
                 }
 
                 & .digital-hero-container-content {
+                    .digital-hero-container-head {
+                        transition: all 2s ease;
+                    }
+
+                    .hero-container-desc {
+                        transition: all 2s ease;
+                    }
+
                     .hero-container-desc {
                         color: var(--black);
                     }
@@ -385,7 +396,6 @@
                 .version-1-image {
                     opacity: 1;
                     visibility: visible;
-                    z-index: -2;
                 }
             }
         }
