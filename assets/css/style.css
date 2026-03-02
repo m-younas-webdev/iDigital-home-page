@@ -1051,6 +1051,36 @@
     }
 }
 
+/* Update these specific parts in your CSS */
+.testimnial-cards-main-container.swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* Important to hide other slides */
+}
+
+.testimonial-cards-container.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Remove 'width: 33%' and use this instead */
+.testimnial-cards-main-container .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-user-card {
+    width: 100%;
+    /* Ensures the card fills the swiper slot */
+    background-color: #F3F7FD;
+    border-radius: 22px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* END :: Testimonial Section 
 ************************************** */
 /* ##########################  */
@@ -1329,10 +1359,23 @@
                                         font-weight: 400;
                                         font-family: var(--ff-satoshi);
                                         width: 140px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 4px;
 
-                                        .connent-title {}
+                                        .connent-title {
+                                            font-size: 16px;
+                                            line-height: 18px;
+                                            color: var(--white);
+                                            padding-bottom: 2px;
+                                            font-weight: 700;
+                                        }
 
-                                        span {}
+                                        span {
+                                            font-size: 15px;
+                                            line-height: 20px;
+                                            color: var(--white);
+                                        }
                                     }
 
                                     p.connecting-text {}
