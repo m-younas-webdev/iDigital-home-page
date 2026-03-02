@@ -123,12 +123,7 @@
         .hero-version {
             .digital-hero-container {
                 border-radius: 40px;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
                 padding: 60px 0 66px 68px;
-                position: relative;
-                z-index: 1;
 
                 .digital-hero-container-content {
                     max-width: 562px;
@@ -169,10 +164,10 @@
                     /* ####################  */
                     .digital-hero-container-head {
                         font-size: 57px;
-                        line-height: 65px;
+                        line-height: 62px;
                         font-family: var(--ff-clash);
                         font-weight: 500;
-                        padding: 26px 0 13px;
+                        padding: 20px 0 13px;
                         transition: all .3s ease;
                     }
 
@@ -303,10 +298,9 @@
 }
 
 /* IDigital Hero Section Version 1  */
-/* IDigital Hero Section Version 1  */
 .digital-hero-section {
     .container {
-        .hero-version {
+        .version-1 {
             position: relative;
 
             & .digital-hero-container {
@@ -315,13 +309,23 @@
 
                 .version-1-image {
                     position: absolute;
-                    z-index: 1;
+                    overflow: hidden;
                     inset: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .3s ease;
+
+                    img {
+                        border-radius: 40px;
+                    }
                 }
 
                 .version-2-image {
                     position: absolute;
                     overflow: hidden;
+                    inset: 0;
+                    opacity: 0;
+                    visibility: hidden;
 
                     img {
                         border-radius: 40px;
@@ -332,102 +336,11 @@
                     .hero-container-desc {
                         color: var(--black);
                     }
-                }
-            }
-        }
-    }
-}
 
-/* IDigital Hero Section Version 2  */
-.version-2 {
-    .container {
-        .digital-hero-container {
-            border-radius: 40px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 60px 0 66px 68px;
-            position: relative;
-            z-index: 1;
-
-            .digital-hero-container-content {
-                max-width: 562px;
-
-                .service-status-label {
-                    display: flex;
-                    gap: 9px;
-                    align-items: center;
-                    padding: 2px;
-                    border: 1px solid #E2E2E2;
-                    max-width: max-content;
-                    border-radius: 50px;
-                    background-color: white;
-
-                    .statu-label-icon {
-                        padding: 4px;
-                        border-radius: 50%;
-                        display: grid;
-                        place-items: center;
-                        background-color: var(--blue);
-                        max-width: max-content;
-
-                        svg {
-                            width: 16px;
-                            height: 16px;
-                        }
-                    }
-
-                    span {
-                        font-size: 12px;
-                        line-height: 14px;
-                        color: var(--black);
-                        font-family: var(--ff-satoshi);
-                        padding-right: 13px;
-                    }
-                }
-
-                .digital-hero-container-head {
-                    font-size: 57px;
-                    line-height: 65px;
-                    color: var(--white);
-                    font-family: var(--ff-clash);
-                    font-weight: 500;
-                    padding: 26px 0 13px;
-                }
-
-                .hero-container-desc {
-                    font-size: 22px;
-                    line-height: 29px;
-                    font-family: var(--ff-satoshi);
-                    color: var(--white);
-                    max-width: 448px;
-                    word-spacing: 3px;
-                }
-
-                .cta-buttons {
-                    padding: 28px 0 32px;
-
-                    .cta-btn {
-                        &:nth-child(1) {
-                            background-color: var(--white);
-
-                            span {
-                                color: var(--black);
-                            }
-
-                            .arrow-svg {
-                                background-color: black;
-
-                                svg {
-                                    path {
-                                        fill: var(--white);
-                                    }
-                                }
-                            }
-
-                            &:hover {
-                                background: var(--black);
-                                border: 1px solid var(--white);
+                    .cta-buttons {
+                        .cta-btn {
+                            &:nth-child(1) {
+                                background-color: var(--blue);
 
                                 span {
                                     color: var(--white);
@@ -437,8 +350,25 @@
                                     background-color: var(--white);
 
                                     svg {
-                                        path {
-                                            fill: var(--black);
+                                        path {}
+                                    }
+                                }
+
+                                &:hover {
+                                    border: 1px solid var(--blue);
+                                    background-color: var(--white);
+
+                                    span {
+                                        color: var(--blue);
+                                    }
+
+                                    .arrow-svg {
+                                        background-color: var(--blue);
+
+                                        svg {
+                                            path {
+                                                fill: var(--white);
+                                            }
                                         }
                                     }
                                 }
@@ -446,93 +376,188 @@
                         }
                     }
                 }
+            }
+        }
 
-                .social-proof-wrapper {
-                    display: flex;
-                    align-items: center;
-                    gap: 11px;
+        .version-1.active {
+            & .digital-hero-container {
+                .version-1-image {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
 
-                    .social-users-images {
-                        display: flex;
-                        align-items: center;
+/* IDigital Hero Section Version 2  */
+.digital-hero-section {
+    .container {
+        .version-2 {
+            .digital-hero-container {
+                position: relative;
 
-                        .user-image {
-                            img {
-                                width: 48px;
-                                height: 48px;
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                display: flex;
-                            }
-                        }
+                .version-1-image {
+                    position: absolute;
+                    overflow: hidden;
+                    inset: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: -2;
 
-                        & :nth-child(1).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
-                            }
-                        }
-
-                        & :nth-child(2).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--black);
-                                margin-left: -13px;
-                            }
-                        }
-
-                        & :nth-child(3).user-image {
-                            img {
-                                border-radius: 50%;
-                                border: 2px solid var(--white);
-                                background-color: var(--blue);
-                                margin-left: -13px;
-                            }
-                        }
-                    }
-
-                    .social-users-trust-stack {
-                        .users-counter {
-                            font-size: 20px;
-                            line-height: 26px;
-                            font-weight: 700;
-                            font-family: var(--ff-satoshi);
-                            color: var(--white);
-                        }
-
-                        .social-users-label {
-                            font-size: 14px;
-                            line-height: 18px;
-                            font-weight: 400;
-                            color: var(--white);
-                            font-family: var(--ff-satoshi);
-                            padding-top: 6px;
-                        }
+                    img {
+                        border-radius: 40px;
                     }
                 }
 
-                .social-ranking-badge-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 4px;
-                    padding-top: 28px;
+                .version-2-image {
+                    position: absolute;
+                    overflow: hidden;
+                    inset: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .3s ease;
+                    z-index: -2;
 
-                    .social-ranking-label {
-                        font-size: 18px;
-                        line-height: 24px;
-                        font-family: var(--ff-satoshi);
-                        font-weight: 400;
-                        color: var(--white);
+                    img {
+                        border-radius: 40px;
+                    }
+                }
+
+                .digital-hero-container-content {
+                    max-width: 562px;
+
+                    .service-status-label {
+                        display: flex;
+                        gap: 9px;
+                        align-items: center;
+                        padding: 2px;
+                        border: 1px solid #E2E2E2;
+                        max-width: max-content;
+                        border-radius: 50px;
+                        background-color: white;
+
+                        .statu-label-icon {
+                            padding: 4px;
+                            border-radius: 50%;
+                            display: grid;
+                            place-items: center;
+                            background-color: var(--blue);
+                            max-width: max-content;
+
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
 
                         span {
-                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: var(--black);
+                            font-family: var(--ff-satoshi);
+                            padding-right: 13px;
+                        }
+                    }
+
+                    .digital-hero-container-head {
+                        color: var(--white);
+                    }
+
+                    .hero-container-desc {
+                        color: var(--white);
+                    }
+
+                    .cta-buttons {
+                        padding: 28px 0 32px;
+
+                        .cta-btn {
+                            &:nth-child(1) {
+                                background-color: var(--white);
+
+                                span {
+                                    color: var(--black);
+                                }
+
+                                .arrow-svg {
+                                    background-color: black;
+
+                                    svg {
+                                        path {
+                                            fill: var(--white);
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    background: var(--black);
+                                    border: 1px solid var(--white);
+
+                                    span {
+                                        color: var(--white);
+                                    }
+
+                                    .arrow-svg {
+                                        background-color: var(--white);
+
+                                        svg {
+                                            path {
+                                                fill: var(--black);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .social-proof-wrapper {
+                        .social-users-images {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .social-users-trust-stack {
+                            .users-counter {
+                                color: var(--white);
+                            }
+
+                            .social-users-label {
+                                color: var(--white);
+                            }
+                        }
+                    }
+
+                    .social-ranking-badge-wrapper {
+                        .social-ranking-label {
+                            color: var(--white);
+
+                            span {}
                         }
                     }
                 }
             }
         }
+
+        /* ##################  */
+        .version-2.active {
+            .digital-hero-container {
+                .version-1-image {
+                    inset: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: -2;
+                }
+
+                .version-2-image {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        /* ##################  */
+        /* ##################  */
     }
 }
 
