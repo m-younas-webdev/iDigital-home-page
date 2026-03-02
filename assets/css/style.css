@@ -168,7 +168,7 @@
                         font-family: var(--ff-clash);
                         font-weight: 500;
                         padding: 20px 0 13px;
-                        transition: all .3s ease;
+                        transition: all 2s ease;
                     }
 
                     .hero-container-desc {
@@ -178,7 +178,7 @@
                         color: var(--white);
                         max-width: 448px;
                         word-spacing: 3px;
-                        transition: all .3s ease;
+                        transition: all 2s ease;
                     }
 
                     .cta-buttons {
@@ -186,6 +186,8 @@
 
                         .cta-btn {
                             &:nth-child(1) {
+                                transition: all 2s ease;
+
                                 span {}
 
                                 .arrow-svg {
@@ -259,7 +261,7 @@
                                 line-height: 26px;
                                 font-weight: 700;
                                 font-family: var(--ff-satoshi);
-                                transition: all .3s ease;
+                                transition: all 2s ease;
                             }
 
                             .social-users-label {
@@ -268,7 +270,7 @@
                                 font-weight: 400;
                                 font-family: var(--ff-satoshi);
                                 padding-top: 2px;
-                                transition: all .3s ease;
+                                transition: all 2s ease;
                             }
                         }
                     }
@@ -311,7 +313,7 @@
                     inset: 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: all 1s ease;
+                    transition: all 2s ease;
 
                     img {
                         border-radius: 40px;
@@ -324,6 +326,7 @@
                     inset: 0;
                     opacity: 0;
                     visibility: hidden;
+                    transition: all 2s ease;
 
                     img {
                         border-radius: 40px;
@@ -403,6 +406,7 @@
                     opacity: 0;
                     visibility: hidden;
                     z-index: -2;
+                    transition: all 2s ease;
 
                     img {
                         border-radius: 40px;
@@ -415,8 +419,8 @@
                     inset: 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: all 1s ease;
                     z-index: -2;
+                    transition: all 2s ease;
 
                     img {
                         border-radius: 40px;
@@ -461,10 +465,12 @@
 
                     .digital-hero-container-head {
                         color: var(--white);
+                        transition: all 2s ease;
                     }
 
                     .hero-container-desc {
                         color: var(--white);
+                        transition: all 2s ease;
                     }
 
                     .cta-buttons {
@@ -519,10 +525,12 @@
                         .social-users-trust-stack {
                             .users-counter {
                                 color: var(--white);
+                                transition: all 2s ease;
                             }
 
                             .social-users-label {
                                 color: var(--white);
+                                transition: all 2s ease;
                             }
                         }
                     }
@@ -530,6 +538,7 @@
                     .social-ranking-badge-wrapper {
                         .social-ranking-label {
                             color: var(--white);
+                            transition: all 2s ease;
 
                             span {}
                         }
