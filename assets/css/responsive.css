@@ -321,88 +321,90 @@
   ****************************** */
   .digital-hero-section {
     .container {
-      .digital-hero-container {
-        padding-left: 0;
-        padding: 60px 0 70px 0;
+      .hero-version {
+        .digital-hero-container {
+          padding-left: 0;
+          padding: 60px 0 70px 0;
 
-        &::before {
-          background: linear-gradient(92.89deg, rgba(15, 99, 220, 0.9) 13.51%, rgba(15, 99, 220, 0) 100.52%);
-        }
-
-        .digital-hero-container-content {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          margin: 0 auto;
-
-          .service-status-label {
-            .statu-label-icon {
-              svg {}
-            }
-
-            span {
-              font-size: 16px;
-              line-height: 20px;
-            }
+          &::before {
+            background: linear-gradient(92.89deg, rgba(15, 99, 220, 0.9) 13.51%, rgba(15, 99, 220, 0) 100.52%);
           }
 
-          .digital-hero-container-head {
-            text-align: center;
+          .digital-hero-container-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             margin: 0 auto;
-            font-size: clamp(40px, 5vw + 1rem, 60px);
-            line-height: clamp(40px, 5vw + 1rem, 65px);
-          }
 
-          .hero-container-desc {
-            text-align: center;
-            font-size: 23px;
-            line-height: 33px;
-            max-width: 70%;
-          }
+            .service-status-label {
+              .statu-label-icon {
+                svg {}
+              }
 
-          .social-proof-wrapper {
-            .social-users-images {
-              img {}
-            }
-
-            .social-users-trust-stack {
-              .users-counter {}
-
-              .social-users-label {}
-            }
-          }
-
-          .social-ranking-badge-wrapper {
-            text-align: center;
-            padding-top: 33px;
-
-            .social-ranking-badge {
-              svg {
-                g {
-                  path {}
-                }
-
-                defs {
-                  linearGradient {
-                    stop {}
-                  }
-
-                  clipPath {
-                    rect {}
-                  }
-                }
+              span {
+                font-size: 16px;
+                line-height: 20px;
               }
             }
 
-            .social-ranking-label {
-              span {}
+            .digital-hero-container-head {
+              text-align: center;
+              margin: 0 auto;
+              font-size: clamp(40px, 5vw + 1rem, 60px);
+              line-height: clamp(40px, 5vw + 1rem, 65px);
             }
+
+            .hero-container-desc {
+              text-align: center;
+              font-size: 23px;
+              line-height: 33px;
+              max-width: 70%;
+            }
+
+            .social-proof-wrapper {
+              .social-users-images {
+                img {}
+              }
+
+              .social-users-trust-stack {
+                .users-counter {}
+
+                .social-users-label {}
+              }
+            }
+
+            .social-ranking-badge-wrapper {
+              text-align: center;
+              padding-top: 33px;
+
+              .social-ranking-badge {
+                svg {
+                  g {
+                    path {}
+                  }
+
+                  defs {
+                    linearGradient {
+                      stop {}
+                    }
+
+                    clipPath {
+                      rect {}
+                    }
+                  }
+                }
+              }
+
+              .social-ranking-label {
+                span {}
+              }
+            }
+
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
           }
-
-          .swiper-wrapper {}
-
-          .swiper-pagination {}
         }
       }
     }
@@ -1106,71 +1108,73 @@
   ****************************** */
   .digital-hero-section {
     .container {
-      .digital-hero-container {
-        border-radius: 20px;
-        padding: 47px 0 48px 0;
+      .hero-version {
+        .digital-hero-container {
+          border-radius: 20px;
+          padding: 47px 0 48px 0;
 
-        .digital-hero-container-content {
-          .digital-hero-container-head {
-            font-size: clamp(30px, 3vw + 1rem, 38px);
-            line-height: clamp(38px, 3vw + 1rem, 48px);
-            max-width: 75%;
-            padding: 26px 0 12px;
-          }
-
-          .hero-container-desc {
-            max-width: 72%;
-            font-size: 16px;
-            line-height: 20px;
-          }
-
-          .cta-buttons {
-            padding: 31px 0 40px;
-            /* flex-direction: column; */
-          }
-
-          .social-proof-wrapper {
-            .social-users-images {
-              img {}
+          .digital-hero-container-content {
+            .digital-hero-container-head {
+              font-size: clamp(30px, 3vw + 1rem, 38px);
+              line-height: clamp(38px, 3vw + 1rem, 48px);
+              max-width: 75%;
+              padding: 26px 0 12px;
             }
 
-            .social-users-trust-stack {
-              .users-counter {
-                font-size: 20px;
-                line-height: 26px;
+            .hero-container-desc {
+              max-width: 72%;
+              font-size: 16px;
+              line-height: 20px;
+            }
+
+            .cta-buttons {
+              padding: 31px 0 40px;
+              /* flex-direction: column; */
+            }
+
+            .social-proof-wrapper {
+              .social-users-images {
+                img {}
               }
 
-              .social-users-label {}
-            }
-          }
-
-          .social-ranking-badge-wrapper {
-            .social-ranking-badge {
-              svg {
-                g {
-                  path {}
+              .social-users-trust-stack {
+                .users-counter {
+                  font-size: 20px;
+                  line-height: 26px;
                 }
 
-                defs {
-                  linearGradient {
-                    stop {}
-                  }
-
-                  clipPath {
-                    rect {}
-                  }
-                }
+                .social-users-label {}
               }
             }
 
-            .social-ranking-label {
-              span {}
+            .social-ranking-badge-wrapper {
+              .social-ranking-badge {
+                svg {
+                  g {
+                    path {}
+                  }
+
+                  defs {
+                    linearGradient {
+                      stop {}
+                    }
+
+                    clipPath {
+                      rect {}
+                    }
+                  }
+                }
+              }
+
+              .social-ranking-label {
+                span {}
+              }
             }
+
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
           }
-
-          .swiper-wrapper {}
-
-          .swiper-pagination {}
         }
       }
     }
@@ -1385,80 +1389,82 @@
   ****************************** */
   .digital-hero-section {
     .container {
-      .digital-hero-container {
-        padding: 30px 0 40px 0;
+      .hero-version {
+        .digital-hero-container {
+          padding: 30px 0 40px 0;
 
-        .digital-hero-container-content {
-          .service-status-label {
-            .statu-label-icon {
-              svg {}
-            }
-
-            span {}
-          }
-
-          .digital-hero-container-head {
-            font-size: 33px;
-            line-height: 38px;
-          }
-
-          .hero-container-desc {}
-
-          .cta-buttons {
-            padding: 25px 0 34px;
-            gap: 10px;
-          }
-
-          .social-proof-wrapper {
-            flex-direction: column-reverse;
-
-            .social-users-images {
-              img {}
-            }
-
-            .social-users-trust-stack {
-              .users-counter {
-                text-align: center;
+          .digital-hero-container-content {
+            .service-status-label {
+              .statu-label-icon {
+                svg {}
               }
 
-              .social-users-label {
-                padding-top: 0;
-              }
-            }
-          }
-
-          .social-ranking-badge-wrapper {
-            padding-top: 20px;
-            gap: 0;
-
-            .social-ranking-badge {
-              svg {
-                width: 80px;
-
-                g {
-                  path {}
-                }
-
-                defs {
-                  linearGradient {
-                    stop {}
-                  }
-
-                  clipPath {
-                    rect {}
-                  }
-                }
-              }
-            }
-
-            .social-ranking-label {
               span {}
             }
+
+            .digital-hero-container-head {
+              font-size: 33px;
+              line-height: 38px;
+            }
+
+            .hero-container-desc {}
+
+            .cta-buttons {
+              padding: 25px 0 34px;
+              gap: 10px;
+            }
+
+            .social-proof-wrapper {
+              flex-direction: column-reverse;
+
+              .social-users-images {
+                img {}
+              }
+
+              .social-users-trust-stack {
+                .users-counter {
+                  text-align: center;
+                }
+
+                .social-users-label {
+                  padding-top: 0;
+                }
+              }
+            }
+
+            .social-ranking-badge-wrapper {
+              padding-top: 20px;
+              gap: 0;
+
+              .social-ranking-badge {
+                svg {
+                  width: 80px;
+
+                  g {
+                    path {}
+                  }
+
+                  defs {
+                    linearGradient {
+                      stop {}
+                    }
+
+                    clipPath {
+                      rect {}
+                    }
+                  }
+                }
+              }
+
+              .social-ranking-label {
+                span {}
+              }
+            }
+
+            .swiper-wrapper {}
+
+            .swiper-pagination {}
           }
-
-          .swiper-wrapper {}
-
-          .swiper-pagination {}
         }
       }
     }

@@ -382,6 +382,7 @@
                 .version-1-image {
                     opacity: 1;
                     visibility: visible;
+                    z-index: -2;
                 }
             }
         }
@@ -1209,12 +1210,20 @@
                         color: var(--white);
                         border-radius: 100px;
                         outline: none;
-                        border: none;
+                        border: 1px solid transparent;
+                        cursor: pointer;
+                        transition: all .3s ease;
 
                         span {
                             font-size: 16px;
                             font-weight: 500;
                             line-height: 25px;
+                        }
+
+                        &:hover {
+                            background-color: var(--white);
+                            color: var(--blue);
+                            border: 1px solid var(--blue);
                         }
                     }
                 }

@@ -70,6 +70,7 @@
         min-width: max-content;
         transition: all .3s ease;
         margin: 0 auto;
+        will-change: transform;
     }
 
     .arrow-svg {
@@ -183,6 +184,14 @@
 
     &:active {
         transform: scale(.9);
+    }
+
+    &:hover {
+        .arrow-svg {
+            transform: rotate(20deg);
+
+            svg {}
+        }
     }
 }
 
