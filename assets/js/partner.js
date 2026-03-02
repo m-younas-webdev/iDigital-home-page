@@ -1,5 +1,5 @@
 // Partner Section JS Logic
-var swiper = new Swiper(".mySwiper", {
+var partnerLogoSwiper = new Swiper(".partner-logo-container", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: "auto", // JS will now stop calculating width

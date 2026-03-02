@@ -168,7 +168,7 @@
                         font-family: var(--ff-clash);
                         font-weight: 500;
                         padding: 20px 0 13px;
-                        transition: all 2s ease;
+                        transition: all .6s ease;
                     }
 
                     .hero-container-desc {
@@ -178,7 +178,7 @@
                         color: var(--white);
                         max-width: 448px;
                         word-spacing: 3px;
-                        transition: all 2s ease;
+                        transition: all .6s ease;
                     }
 
                     .cta-buttons {
@@ -186,10 +186,8 @@
 
                         .cta-btn {
                             &:nth-child(1) {
-                                transition: all 2s ease;
-
                                 span {
-                                    transition: all .3s ease;
+                                    transition: all .6s ease;
                                 }
 
                                 .arrow-svg {
@@ -263,7 +261,7 @@
                                 line-height: 26px;
                                 font-weight: 700;
                                 font-family: var(--ff-satoshi);
-                                transition: all 2s ease;
+                                transition: all .6s ease;
                             }
 
                             .social-users-label {
@@ -272,7 +270,7 @@
                                 font-weight: 400;
                                 font-family: var(--ff-satoshi);
                                 padding-top: 2px;
-                                transition: all 2s ease;
+                                transition: all .6s ease;
                             }
                         }
                     }
@@ -287,7 +285,7 @@
                             font-size: 18px;
                             line-height: 24px;
                             font-family: var(--ff-satoshi);
-                            transition: all .3s ease;
+                            transition: all .6s ease;
                             font-weight: 400;
 
                             span {
@@ -315,7 +313,7 @@
                     inset: 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: all 2s ease;
+                    transition: all .6s ease;
 
                     img {
                         border-radius: 40px;
@@ -328,7 +326,7 @@
                     inset: 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: all 2s ease;
+                    transition: all .6s ease;
                     z-index: -2;
 
                     img {
@@ -338,11 +336,11 @@
 
                 & .digital-hero-container-content {
                     .digital-hero-container-head {
-                        transition: all 2s ease;
+                        transition: all .6 ease;
                     }
 
                     .hero-container-desc {
-                        transition: all 2s ease;
+                        transition: all .6s ease;
                     }
 
                     .hero-container-desc {
@@ -416,7 +414,7 @@
                     opacity: 0;
                     visibility: hidden;
                     z-index: -2;
-                    transition: all 2s ease;
+                    transition: all .6s ease;
 
                     img {
                         border-radius: 40px;
@@ -430,7 +428,7 @@
                     opacity: 0;
                     visibility: hidden;
                     z-index: -2;
-                    transition: all 2s ease;
+                    transition: all .6s ease;
 
                     img {
                         border-radius: 40px;
@@ -475,12 +473,12 @@
 
                     .digital-hero-container-head {
                         color: var(--white);
-                        transition: all 2s ease;
+                        transition: all .6s ease;
                     }
 
                     .hero-container-desc {
                         color: var(--white);
-                        transition: all 2s ease;
+                        transition: all .6s ease;
                     }
 
                     .cta-buttons {
@@ -535,12 +533,12 @@
                         .social-users-trust-stack {
                             .users-counter {
                                 color: var(--white);
-                                transition: all 2s ease;
+                                transition: all .6s ease;
                             }
 
                             .social-users-label {
                                 color: var(--white);
-                                transition: all 2s ease;
+                                transition: all .6s ease;
                             }
                         }
                     }
@@ -548,7 +546,7 @@
                     .social-ranking-badge-wrapper {
                         .social-ranking-label {
                             color: var(--white);
-                            transition: all 2s ease;
+                            transition: all .6s ease;
 
                             span {}
                         }
