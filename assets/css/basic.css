@@ -188,9 +188,9 @@
 
     &:hover {
         .arrow-svg {
-            transform: rotate(20deg);
-
-            svg {}
+            svg {
+                transform: rotate(20deg);
+            }
         }
     }
 }

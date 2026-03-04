@@ -24,15 +24,16 @@
                 display: flex;
                 width: 100%;
                 justify-content: center;
+                gap: 4px;
 
                 .header-nav-item {
                     a {
                         font-family: var(--ff-satoshi);
                         color: var(--black);
-                        font-size: 18px;
+                        font-size: 15px;
                         line-height: 26px;
-                        padding: 12px;
-                        border-radius: 14px;
+                        padding: 5px 10px;
+                        border-radius: 8px;
                         transition: all .3s ease;
                         max-width: max-content;
 
@@ -314,6 +315,7 @@
                     opacity: 0;
                     visibility: hidden;
                     transition: all .6s ease;
+                    z-index: -2;
 
                     img {
                         border-radius: 40px;
@@ -773,8 +775,7 @@
             gap: 30px;
 
             .services-image {
-                max-width: 475px;
-                width: 100%;
+                width: 40vw;
 
                 img {
                     width: 100%;
@@ -784,8 +785,8 @@
             .services-content {
                 display: flex;
                 flex-direction: column;
-                max-width: 600px;
                 justify-content: center;
+                width: 60vw;
 
                 .title-label {
                     margin: 0;
@@ -798,11 +799,12 @@
 
                 .service-detail-wrapper {
                     .services-detail {
-                        font-size: 1.4vw;
+                        font-size: 16px;
                         font-weight: 400;
-                        line-height: 2.2vw;
+                        line-height: 24px;
                         color: var(--black);
                         font-family: var(--ff-satoshi);
+                        padding-right: 10%;
                     }
                 }
 
@@ -858,6 +860,8 @@
                     display: flex;
                     gap: 32px;
                     flex-direction: column;
+                    overflow: hidden;
+                    transition: all .3s ease;
 
                     .trust-card-content {
                         padding: 14px 14px 0 16px;
@@ -867,6 +871,7 @@
                             line-height: 38px;
                             font-weight: 500;
                             font-family: var(--ff-clash);
+                            will-change: transform;
                         }
 
                         .trust-card-desc {
@@ -875,6 +880,7 @@
                             font-family: var(--ff-satoshi);
                             line-height: 27px;
                             padding: 8px 0 20px;
+                            will-change: transform;
                         }
 
                         .cta-btn {
@@ -905,6 +911,18 @@
                         img {
                             border-radius: 22px;
                             aspect-ratio: 603/343;
+                            transition: all .3s ease;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.2);
+                        transform: scale(1.002);
+
+                        .trust-card-image {
+                            img {
+                                transform: scale(1.02);
+                            }
                         }
                     }
                 }
@@ -971,6 +989,7 @@
                             padding: 28px;
                             display: flex;
                             flex-direction: column;
+                            transition: all .3s ease;
 
                             /* gap: 20px; */
                             .quote-icon {
@@ -1041,6 +1060,11 @@
                                     }
                                 }
                             }
+
+                            &:hover {
+                                background-color: #ECF2FB;
+                                box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.2);
+                            }
                         }
                     }
                 }
@@ -1053,8 +1077,6 @@
 .testimnial-cards-main-container.swiper {
     width: 100%;
     height: auto;
-    overflow: hidden;
-    /* Important to hide other slides */
 }
 
 .testimonial-cards-container.swiper-wrapper {
@@ -1235,12 +1257,12 @@
                             border: none;
                             padding: 6px 0px 0px 12px;
                             outline: none;
-                            font-size: 18px;
-                            line-height: 24px;
+                            font-size: 16px;
+                            line-height: 22px;
                             width: 178px;
 
                             &::placeholder {
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: 400;
                                 line-height: 20px;
                                 color: var(--black);
@@ -1335,21 +1357,6 @@
                                     align-items: center;
                                     gap: 14px;
 
-                                    svg {
-                                        width: 45px;
-                                        aspect-ratio: 1;
-
-                                        g {
-                                            path {}
-                                        }
-
-                                        defs {
-                                            clipPath {
-                                                rect {}
-                                            }
-                                        }
-                                    }
-
                                     .connecting-text {
                                         font-size: 14px;
                                         color: var(--white);
@@ -1375,9 +1382,12 @@
                                             color: var(--white);
                                         }
                                     }
-
-                                    p.connecting-text {}
                                 }
+                            }
+
+                            .phone-wrapper {
+                                background-color: red;
+                                display: flex;
                             }
                         }
                     }
