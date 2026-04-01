@@ -3,68 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swiper Testimonial Slider</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <title>Flight Fare Calculator</title>
     <style>
       body {
         font-family: sans-serif;
-        background: #f4f4f4;
-        padding: 50px 0;
-      }
-
-      .swiper {
-        width: 90%;
-        max-width: 1200px;
-        height: 250px;
-      }
-
-      .swiper-slide {
-        background: #fff;
+        background: #f0f2f5;
         display: flex;
-        align-items: center;
         justify-content: center;
-        font-size: 22px;
+        padding: 20px;
+      }
+      .card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+      h2 {
+        color: #1a73e8;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .input-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
         font-weight: bold;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border: 1px solid #eee;
+        font-size: 14px;
+      }
+      select,
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      button:hover {
+        background: #1557b0;
+      }
+      #result {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 6px;
+        display: none;
+        text-align: center;
+        font-weight: bold;
+        background: #e8f0fe;
+        color: #1967d2;
       }
     </style>
   </head>
   <body>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Review 1</div>
-        <div class="swiper-slide">Review 2</div>
-        <div class="swiper-slide">Review 3</div>
-        <div class="swiper-slide">Review 4</div>
+    <div class="card">
+      <h2>Flight Booking</h2>
+
+      <div class="input-group">
+        <label>From City</label>
+        <select id="fromCity">
+          <option value="Karachi">Karachi</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Islamabad">Islamabad</option>
+        </select>
       </div>
+
+      <div class="input-group">
+        <label>To City</label>
+        <select id="toCity">
+          <option value="Dubai">Dubai</option>
+          <option value="London">London</option>
+          <option value="New York">New York</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Travel Date</label>
+        <input type="date" id="travelDate" />
+      </div>
+
+      <div class="input-group">
+        <label>Class Type</label>
+        <select id="classType">
+          <option value="1">Economy (Low Class)</option>
+          <option value="1.5">Business (Middle Class)</option>
+          <option value="2.5">First Class (High Class)</option>
+        </select>
+      </div>
+
+      <button onclick="calculateFare()">Check Price</button>
+
+      <div id="result"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3, // Show 3 cards (3 cards dikhayen)
-        spaceBetween: 30, // Gap between cards (cards ke darmiyan fasla)
-        loop: true, // Infinite loop (hamesha chalta rahe)
-        autoplay: {
-          delay: 5000, // Wait 5 seconds (5 second ruko)
-          disableOnInteraction: false,
-        },
-        speed: 2000, // Transition duration 2s (tabdeeli ka waqt 2s)
+      // Database for Base Prices (City to City)
+      const priceData = {
+        "Karachi-Dubai": 50000,
+        "Karachi-London": 150000,
+        "Karachi-New York": 250000,
+        "Lahore-Dubai": 55000,
+        "Lahore-London": 160000,
+        "Lahore-New York": 260000,
+        "Islamabad-Dubai": 52000,
+        "Islamabad-London": 155000,
+        "Islamabad-New York": 255000,
+      };
 
-        // Responsive breakpoints
-        breakpoints: {
-          320: { slidesPerView: 1 }, // 1 card on mobile
-          768: { slidesPerView: 2 }, // 2 cards on tablets
-          1024: { slidesPerView: 3 }, // 3 cards on desktop
-        },
-      });
+      function calculateFare() {
+        const from = document.getElementById("fromCity").value;
+        const to = document.getElementById("toCity").value;
+        const date = document.getElementById("travelDate").value;
+        const multiplier = parseFloat(
+          document.getElementById("classType").value,
+        );
+        const resultDiv = document.getElementById("result");
+
+        if (!date) {
+          alert("Please select a date!");
+          return;
+        }
+
+        const routeKey = `${from}-${to}`;
+        const basePrice = priceData[routeKey];
+
+        if (basePrice) {
+          const finalPrice = basePrice * multiplier;
+          resultDiv.style.display = "block";
+          resultDiv.innerHTML = `Route: ${from} to ${to}<br>Date: ${date}<br>Total Fare: PKR ${finalPrice.toLocaleString()}`;
+        } else {
+          resultDiv.style.display = "block";
+          resultDiv.innerHTML = "Route not available.";
+        }
+      }
     </script>
   </body>
 </html>

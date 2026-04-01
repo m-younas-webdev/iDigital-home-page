@@ -487,6 +487,7 @@
 
         .services-content {
           align-items: center;
+          width: 100%;
 
           .title-label {}
 
@@ -496,11 +497,11 @@
 
           .service-detail-wrapper {
             .services-detail {
-              width: 90%;
               margin: 0 auto;
               font-size: 20px;
               line-height: 30px;
               text-align: center;
+              padding: 0;
             }
           }
 
@@ -1187,7 +1188,8 @@
   /* ###########################  */
   /* ###########################  */
   /* ###########################  */
-  /* START :: Repair Section */
+  /* START :: Repair Section 
+  *********************************/
   .services-section {
     padding: 90px 0;
 
@@ -1198,7 +1200,10 @@
         }
 
         .services-content {
-          .title-label {}
+          .title-label {
+            max-width: max-content;
+            min-width: max-content;
+          }
 
           .section-title {
             padding: 14px 10px;
@@ -1208,6 +1213,8 @@
             .services-detail {
               font-size: 16px;
               line-height: 22px;
+              width: 100%;
+              padding: 0;
             }
           }
 
@@ -1321,6 +1328,144 @@
 
           .cta-btn.white {
             span {}
+          }
+        }
+      }
+    }
+  }
+
+  /* END :: Contact  Section 
+********************************** */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* ###########################  */
+  /* START :: Footer Section 
+  *********************************/
+  .footer-section {
+    padding: 24px 16px;
+
+    .footer-container {
+      .footer-main-container {
+        .footer-newsletter {
+          .digital-main-logo {
+            a {}
+          }
+
+          .newletter-desc {}
+
+          form {
+            width: 100%;
+
+            .subscribe-bar {
+              width: 100%;
+              max-width: 100%;
+
+              .massage-icon {
+                svg {
+                  path {}
+                }
+              }
+
+              .input-label {
+                input {
+                  padding-right: 6px;
+                }
+              }
+
+              .subscribe-btn {
+                width: 100px;
+                height: 36px;
+                margin-left: auto;
+
+                span {}
+              }
+            }
+          }
+
+          .policy-text {
+            a {}
+          }
+        }
+
+        .social-network-wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .footer-nav-container {
+            .footer-nav-head {}
+
+            .footer-nav-list {
+              align-items: center;
+
+              .footer-nav-item {
+                a {
+                  &.connecting-wrapper {
+                    svg {
+                      g {
+                        path {}
+                      }
+
+                      defs {
+                        clipPath {
+                          rect {}
+                        }
+                      }
+                    }
+
+                    .connecting-text {}
+                  }
+                }
+
+                .phone-wrapper {
+                  svg {
+                    g {
+                      path {}
+                    }
+
+                    defs {
+                      clipPath {
+                        rect {}
+                      }
+                    }
+                  }
+
+                  .connecting-text {
+                    .connect-title {}
+
+                    a {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer-bottom-bar-container {
+        flex-direction: column;
+        gap: 10px;
+
+        .copyright-text {}
+
+        .social-media-links {
+          .social-media-link {
+            a {
+              svg {
+                g {
+                  path {}
+                }
+
+                path {}
+
+                defs {
+                  clipPath {
+                    rect {}
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1589,7 +1734,9 @@
         padding: 20px 10px;
         border-radius: 22px;
 
-        .title-label {}
+        .title-label {
+          max-width: max-content;
+        }
 
         .section-title {}
 

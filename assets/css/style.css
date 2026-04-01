@@ -838,8 +838,6 @@
                 max-width: 700px;
                 padding: 16px 0 12px;
                 margin: 0 auto;
-                font-size: 35px;
-                line-height: 44px;
                 max-width: 500px;
             }
 
@@ -1386,8 +1384,31 @@
                             }
 
                             .phone-wrapper {
-                                background-color: red;
                                 display: flex;
+                                gap: 14px;
+
+                                .connecting-text {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .connect-title {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        color: var(--white);
+                                        font-family: var(--ff-satoshi);
+                                    }
+
+                                    a {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: var(--white);
+                                        font-family: var(--ff-satoshi);
+                                    }
+
+                                    & :nth-child(2) {
+                                        padding: 4px 0 2px;
+                                    }
+                                }
                             }
                         }
                     }
