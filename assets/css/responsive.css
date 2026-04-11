@@ -641,6 +641,8 @@
   /* START :: Contact Section 
 ********************************** */
   .contact-section {
+    padding-bottom: 70px;
+
     .container {
       .contact-container {
         max-width: 90%;
@@ -1602,10 +1604,6 @@
                 span {}
               }
             }
-
-            .swiper-wrapper {}
-
-            .swiper-pagination {}
           }
         }
       }
