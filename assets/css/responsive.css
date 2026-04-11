@@ -192,11 +192,10 @@
         .contact-container-content {
           .title-label {}
 
-          .section-title {
+          /* .section-title {
             font-size: 32px;
             line-height: 40px;
-          }
-
+          } */
           .contact-desc {
             font-size: 16px;
             line-height: 24px;
@@ -682,7 +681,7 @@
 
           .section-title {
             text-align: center;
-            max-width: 380px;
+            max-width: 71%;
             padding: 10px 0 10px;
           }
 
@@ -1322,8 +1321,6 @@
         .contact-container-content {
           .title-label {}
 
-          .section-title {}
-
           .contact-desc {}
 
           .cta-btn.white {
@@ -1623,6 +1620,7 @@
     .partners-container {
       .section-title {
         padding: 12px 0 20px;
+        font-size: 22px;
       }
 
       .partner-container-head {}
