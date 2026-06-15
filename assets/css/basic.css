@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+svg:hover {
+    cursor: pointer
+}
+
 @font-face {
     font-family: 'ClashDisplay';
     src: url('../fonts/ClashDisplay-Regular.otf');
